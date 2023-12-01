@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detalhes Apple</title>
+    </head>
+    <body class="bg-body-secondary d-flex flex-column min-vh-100">
+        <div class="flex-grow-1">
+            <nav class="navbar navbar-expand-lg bg-primary navbar-dark border-bottom mb-3 shadow-sm">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Página Inicial</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="formLogin.html">Cadastre-se</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="acessarConta.html">Entrar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <!--grid onde será mostrado as imagens do produto-->
+            <div class="flex-fill">
+                <div class="container">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <!--imagem principal-->
+                            <img src="img/aplle/iphone11(1).webp" class="img-thumbnail" alt="" id="imgProduto">
+                            <br class="clearfix">
+                            <!--demais imagens-->
+                            <div class="row my-3 gx-3">
+                                <div class="col-3">
+                                    <img src="img/aplle/iphone11(1).webp" class="img-thumbnail"
+                                        onclick="trocarImagem(this)">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/aplle/iphone11(2).webp" class="img-thumbnail"
+                                        onclick="trocarImagem(this)">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/aplle/iphone11(3).webp" class="img-thumbnail"
+                                        onclick="trocarImagem(this)">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/aplle/iphone11(4).webp" class="img-thumbnail"
+                                        onclick="trocarImagem(this)">
+                                </div>
+                            </div>
+                        </div>
+                        <!--informações do produto-->
+                        <div class="col-12 col-md-6">
+                            <h1 class="margimNone">Smartphone Apple Iphone 11 128GB</h1>
+                            <p class="margimNone">
+                                <img src="img/avalicaoEstrelas-removebg-preview.png" alt="avalicaoEstrelas" style="width: 80px; height: 14px;"> 598
+                            </p>
+                            <p class="promo">R$ 2.799,00</p>
+                            <p class="margimNone">
+                                <b class="comDesconto">2.519,10</b> no pix
+                            </p>
+                            <p class="desconto">(10% de desconto)</p>
+                            <p class="semDesconto">ou R$ 2.799,00 em 10x de R$ 279,90 sem juros</p>
+                            <p>
+                                <button class="btn btn-lg btn-success my-2">Comprar agora</button>
+                            </p>
+                            <h4>Informações do Produto</h4>
+                            <p>
+                                Grave vídeos 4K, faça belos retratos e capture paisagens inteiras com o novo sistema de câmera dupla. Tire fotos 
+                                incríveis com pouca luz usando o modo Noite. Veja cores fiéis em fotos, vídeos e jogos na tela Liquid Retina de 
+                                6,1 polegadas***. Leve o desempenho sem precedentes do chip A13 Bionic para seus games, realidade aumentada e fotografia. 
+                                Faça muito e recarregue pouco com a bateria para o dia todo**. E conte com resistência à água de até dois metros 
+                                por até 30 minutos*.Avisos legais:*O iPhone 11 é resistente a respingos, água e poeira e foi testado em condições 
+                                controladas em laboratório, classificado como IP68 segundo a norma IEC 60529 (profundidade máxima de até dois metros 
+                                por até 30 minutos). A resistência a respingos, água e poeira não é uma condição permanente e pode diminuir com o 
+                                tempo. Não tente recarregar um iPhone molhado. Veja instruções no Manual do Usuário para limpeza e secagem.
+                            </p>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!--rodape-->
+        <div class="border-top text-muted bg-light">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center">
+                        &copy; 2023 - TechMobile Ltda ME
+                        <br>
+                        Rua Guamiranda, 123, Telêmaco Borba PR
+                        <br>
+                        CNPJ 00.000.000/0001-00
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        Desenvolvido por:
+                        <br>
+                        Luan M. Ribeiro
+                        <br>
+                        IFPR - TADS 2
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        SAC
+                        <br>
+                        E-mail:
+                        <a href="mailto:email@techmobile.com" class="text-decoration-none text-dark">email@techmobile.com</a>
+                        <br>
+                        Telefone:
+                        <a href="phone:42988888888" class="text-decoration-none text-dark">(42) 9 8888-8888</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!--função que troca a imagem principal (ao clicar em outra imagem) que está sendo mostrada-->
+        <script>
+            function trocarImagem(el) {
+                var imgProduto = document.getElementById("imgProduto");
+                imgProduto.src = el.src;
+            }
+        </script>
+    </body>
+</html>
