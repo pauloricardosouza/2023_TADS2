@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+	<title>Holms Clothes</title>
+	 <!--FAVICON GENERATOR -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+		<div class="container py-3">
+			<a href="#" class="navbar-brand">
+				<img src="img/logo.png" width="100px" alt="logo">
+				<span>Holms Clothes</span>
+			</a>
+			<button class="navbar-toggler" 
+			type="button" 
+			data-bs-toggle="collapse" 
+			data-bs-target="#navbar-items"
+			aria-controls="navbar-items"
+			aria-expanded="false"
+			aria-label="toggle navigation">
+			<i class="bi bi-list"></i>
+		</button>
+		<div class="collapse navbar-collapse" id="navbar-items">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item"><a href="index.html" class="nav-link primary-color" aria-current="page">
+					Inicio
+				</a></li>
+				<li class="nav-item"><a href="camisetas.html" class="nav-link primary-color">
+					Camisetas
+				</a></li>
+				<li class="nav-item"><a href="#" class="nav-link primary-color active">
+					Blusas
+				</a></li>
+				<li class="nav-item"><a href="#" class="nav-link primary-color disabled">
+					Tênis
+				</a></li>
+				<li class="nav-item"><a href="#" class="nav-link primary-color disabled">
+					Calças
+				</a></li>
+			</ul>
+			<div class="d-flex">
+				<a href="login.html" class="nav-link primary-color">
+					<button class="btn btn-outline-dark me-2">
+						<i class="bi bi-person"></i> 
+						Login
+					</button>
+				</a>
+				<a href="cadastro.html" class="nav-link primary-color">
+					<button class="btn btn-outline-dark">
+						<i class="bi bi-person-plus"></i>
+						Cadastrar
+					</button>
+				</div>
+			</a>
+		</div>
+	</div>
+</nav>
+	
+
+<!-- CARDS -->
+<div class="container mb-5" id="cards-shirts">
+    <div class="row">
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card">
+                <img src="img/featuredShirt1.jpg" class="card-img-top" alt="Imagem do Produto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Blusa Nike</h5>
+                    <p class="card-text">Moletom nike com capuz.</p>
+                    <p class="card-text"><strong>Preço:</strong> R$289.99</p>
+                    <button class="btn btn-primary">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card">
+                <img src="img/featuredShirt3.jpeg" class="card-img-top" alt="Imagem do Produto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Blusa DC</h5>
+                    <p class="card-text">Blusa DC Preta com Capuz.</p>
+                    <p class="card-text"><strong>Preço:</strong> R$195.99</p>
+                    <button class="btn btn-primary">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card">
+                <img src="img/featuredShirt4.webp" class="card-img-top" alt="Imagem do Produto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Blusa Element</h5>
+                    <p class="card-text">Moletom Element Preto e Vermelho.</p>
+                    <p class="card-text"><strong>Preço:</strong> R$349.99</p>
+                    <button class="btn btn-primary">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CARRINHO DE COMPRAS -->
+<div class="container mt-5">
+    <h2>Carrinho de Compras</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Produto</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Total</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+        </tbody>
+    </table>
+
+        <p>Total do Carrinho: <span id="cart-total">R$0.00</span></p>
+
+    <!-- Mensagem de sucesso ao adicionar ao carrinho -->
+    <p id="cart-message" class="text-success"></p>
+
+    <button id="clear-cart-btn" class="btn btn-danger">Limpar Carrinho</button>
+</div>
+
+<!-- FOOTER -->
+<footer class="container-fluid bg-dark-color" id="footer">
+	<div class="container">
+		<div class="row">
+			<!-- PARTE DE CIMA DO FOOTER -->
+			<div class="col-12" id="footer-top">
+				<div class="row justify-content-between">
+					<div class="col-4"><h2>Holms Clothes</h2></div>
+					<div class="col-4" id="social-icons">
+						<i class="bi bi-facebook"></i>
+						<i class="bi bi-instagram"></i>
+						<i class="bi bi-youtube"></i>
+						<i class="bi bi-twitter"></i>
+					</div>
+				</div>
+			</div>
+			<!--DETALHES FOOTER-->
+			<div class="col-12" id="footer-details">
+				<div class="row">
+					<div class="col-12 col-md-4" id="news-container">
+					<h4>Fique por dentro de nossas promoções!</h4>
+					<p class="secondary-color">Inscreva-se aqui</p>
+					<form>
+					 <div class="mb-3">
+					  <input type="email" class="form-control" placeholder="Digite o seu e-mail aqui">
+					 </div>
+					 <button class="btn btn-dark" type="submit">Inscrever-se</button>
+					</form>
+					</div>
+					<div class="col-12 col-md-4" id="contact-container">
+					<h4>Formas de contato</h4>
+					<p class="secondary-color">(42)9999-99999</p>
+					<p class="secondary-color">contato@holmsclothes.com.br</p>
+					</div>
+				</div>
+			</div>
+			<!--PARTE DE BAIXO FOOTER -->
+			<div class="col-12" id="footer-bottom"></div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

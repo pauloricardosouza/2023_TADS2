@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pokémon World Tour</title>
+    <!-- CDN para importação do bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Anton', sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('IMG\\login.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            background-color: transparent;
+            /* Torna a barra de navegação transparente */
+            border: none;
+            /* Remove a borda da barra de navegação */
+            z-index: 1000;
+            /* Coloca a barra de navegação acima da imagem de fundo */
+        }
+
+        .navbar-brand {
+            color: #fff;
+            /* Altera a cor do texto da marca para branco */
+        }
+
+        .navbar-nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Fundo semi-transparente para a barra de navegação */
+        }
+
+        .header-text {
+            text-align: center;
+            margin: 50px 0;
+            /* Ajuste da margem para garantir que a frase fique abaixo da navbar */
+            color: yellow;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .container-content {
+            padding: 50px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .container-login {
+            background-color: #a9a9a9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .container-login h1 {
+            color: yellow;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .container-login label {
+            color: #000000;
+        }
+
+        .container-login input {
+            color: #000;
+            /* Cor do texto dentro dos inputs */
+        }
+
+        .container-login button {
+            background-color: #ffcc00;
+            /* Cor de fundo do botão */
+            color: #000;
+            /* Cor do texto do botão */
+            border: none;
+            /* Remove a borda do botão */
+        }
+
+        .container-login a {
+            color: #ffcc00;
+            /* Cor do link "Esqueci a Senha" */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Aula_bootstrap.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="formLogin.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrarUsuario.html">Cadastrar usuário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pokedex.html">Pokedex</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Frase "Acesso ao Sistema Pokémon" em amarelo com margens pretas -->
+    <div class="header-text">
+        <h1>Acesso ao Sistema Pokémon</h1>
+    </div>
+
+    <!-- Container de login -->
+    <div class="container-login container-fluid text-center">
+        <div class="container" style="width: 80%; margin: auto; ">
+            <label for="email">ID do Treinador</label>
+            <input type="text" class="form-control mb-3" id="email" placeholder="Digite o ID do Treinador" name="email">
+        </div>
+
+        <div class="container" style="width: 80%; margin: auto;">
+            <label for="pwd">Senha</label>
+            <input type="password" class="form-control mb-3" id="pwd" placeholder="Digite a senha" name="pswd">
+        </div>
+
+        <div class="container" style="width: 80%; margin: auto; margin-top: 20px;">
+            <button type="button" class="btn btn-primary btn-block">Entrar</button>
+        </div>
+
+        <div class="container" style="width: 80%; margin: auto; margin-top: 10px;">
+            <a href="#">Esqueci a Senha</a>
+        </div>
+    </div>
+
+    <!-- Rodapé fixo -->
+    <div class="footer">
+        <p>Sistema Pokemon</p>
+    </div>
+
+</body>
+
+</html>

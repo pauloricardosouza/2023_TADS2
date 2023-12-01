@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Holms Clothes</title>
+	 <!--FAVICON GENERATOR -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+		<div class="container py-3">
+			<a href="#" class="navbar-brand">
+				<img src="img/logo.png" width="100px" alt="logo">
+				<span>Holms Clothes</span>
+			</a>
+			<button class="navbar-toggler" 
+			type="button" 
+			data-bs-toggle="collapse" 
+			data-bs-target="#navbar-items"
+			aria-controls="navbar-items"
+			aria-expanded="false"
+			aria-label="toggle navigation">
+			<i class="bi bi-list"></i>
+		</button>
+		<div class="collapse navbar-collapse" id="navbar-items">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item"><a href="#" class="nav-link primary-color active" aria-current="page">
+					Inicio
+				</a></li>
+				<li class="nav-item"><a href="camisetas.html" class="nav-link primary-color">
+					Camisetas
+				</a></li>
+				<li class="nav-item"><a href="blusas.html" class="nav-link primary-color">
+					Blusas
+				</a></li>
+				<li class="nav-item"><a href="#" class="nav-link primary-color disabled">
+					Tênis
+				</a></li>
+				<li class="nav-item"><a href="#" class="nav-link primary-color disabled">
+					Calças
+				</a></li>
+			</ul>
+			<div class="d-flex">
+				<a href="login.html" class="nav-link primary-color">
+					<button class="btn btn-outline-dark me-2">
+						<i class="bi bi-person"></i> 
+						Login
+					</button>
+				</a>
+				<a href="cadastro.html" class="nav-link primary-color">
+					<button class="btn btn-outline-dark">
+						<i class="bi bi-person-plus"></i>
+						Cadastrar
+					</button>
+				</div>
+			</a>
+		</div>
+	</div>
+</nav>
+
+<!-- SLIDER -->
+<div class="container" id="slider-container">
+	<div class="carousel slide" id="slider" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button class="active"
+			type="button" 
+			data-bs-target="#slider" 
+			data-bs-slide-to="0"
+			aria-current="true"
+			aria-label="Slide 1"></button>
+			<button
+			type="button"
+			data-bs-target="#slider"
+			data-bs-slide-to="1" 
+			aria-label="Slide 2"></button>
+			<button
+			type="button" 
+			data-bs-target="#slider" 
+			data-bs-slide-to="2"
+			aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/carousel1.png" alt="Blusa1" class="d-block w-100">
+				<div class="carousel-caption">
+					<h5>Blusas para o inverno</h5>
+					<a href="#" class="btn btn-dark">Ver blusas</a>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/carousel2.webp" alt="Blusa1" class="d-block w-100">
+				<div class="carousel-caption">
+					<h5>Camisetas para o verão</h5>
+					<a href="#" class="btn btn-dark">Ver blusas</a>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/carousel3.webp" alt="Blusa1" class="d-block w-100">
+				<div class="carousel-caption">
+					<h5>Calças com preços imperdíveis</h5>
+					<a href="#" class="btn btn-dark">Ver blusas</a>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+			<i class="bi-chvron-compact-left"></i>
+			<span class="visually-hidden">Anterior</span>
+		</button>
+		<button class="carousel-control-next" 
+		type="button" 
+		data-bs-target="#slider" 
+		data-bs-slide="next">
+		<i class="bi-chvron-compact-right"></i>
+		<span class="visually-hidden">Próximo</span>
+	</button>
+</div>
+
+<!-- MINI BANNERS -->
+<div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+	<div class="row">
+		<div class="col-12 col-md-4">
+			<div class="card text-center">
+				<i class="bi bi-bag-dash primary-color"></i>
+				<div class="card-body">
+					<h5 class="card-title primary-color">Anuncie aqui!</h5>
+					<p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur dipisicing elit.
+					</p>
+					<a href="#" class="btn btn-dark">Veja mais</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4">
+			<div class="card text-center">
+				<i class="bi bi-box primary-color"></i>
+				<div class="card-body">
+					<h5 class="card-title primary-color">Camisetas para o verão</h5>
+					<p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					</p>
+					<a href="#" class="btn btn-dark">Veja mais</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-4">
+			<div class="card text-center">
+				<i class="bi bi-bicycle primary-color"></i>
+				<div class="card-body">
+					<h5 class="card-title primary-color">Veja nossa politica de envios</h5>
+					<p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					</p>
+					<a href="#" class="btn btn-dark">Veja mais</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<!-- DESTAQUES -->
+<div class="container" id="featured-container">
+	<div class="col-12"><h2 class="title primary-color">
+		Roupas em destaque</h2>
+		<p class="subtitle-secondary-color">
+			Conheça as roupas que estão em tendência em nosso site.</p>
+		</div>
+		<div class="col12" id="featured-images">
+			<div class="row g-4">
+				<div class="col-12 col-md-4">
+					<img src="img/featuredShirt1.jpg" alt="Shirt1" class="img-fluid">
+					<div class="banner-content">
+						<p class="secondary-color">Blusas</p>
+						<h3>Blusa Nike Preta</h3>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="img/featuredShirt2.webp" alt="Shirt2" class="img-fluid">
+					<div class="banner-content">
+						<p class="secondary-color">Camisetas</p>
+						<h3>Camiseta adidas</h3>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="img/featuredShirt3.jpeg" alt="Shirt3" class="img-fluid">
+					<div class="banner-content">
+						<p class="secondary-color">Blusas</p>
+						<h3>Blusa DC</h3>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="img/featuredShirt4.webp" alt="Shirt4" class="img-fluid">
+					<div class="banner-content">
+						<p class="secondary-color">Blusas</p>
+						<h3>Blusa Element</h3>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="img/featuredShirt5.webp" alt="Shirt5" class="img-fluid">
+					<div class="banner-content">
+						<p class="secondary-color">Blusas</p>
+						<h3>Moletom NBA Los Angeles Lakers</h3>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="img/featuredShirt6.webp" alt="Shirt6" class="img-fluid">
+					<div class="banner-content">
+						<p class="secondary-color">Blusas</p>
+						<h3>Moletom Lacoste Canguru</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- SOBRE -->
+<div class="container" id="info-container">
+		<div class="col-12"><h2 class="title primary-color">
+			Informações sobre nós</h2>
+			<p class="subtitle-secondary-color">
+				Conheça a história de nossa revendedora oficial de roupas, Holm Clothes.</p>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-12 col-md-5"><img src="img/logo.png" width="200px" alt="logo" class="img-fluid"></div>
+				</div>
+			</div>
+			<div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+				<div class="row">
+					<div class="col-12"><h2 class="title primary-color">
+						Trabalhe conosco</h2>
+						<p class="subtitle-secondary-color">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Esse in corrupti obcaecati necessitatibus eos perferendis 
+							quas sint et, consequuntur at aspernatur laborum optio ab
+							iusto, earum laboriosam dolorum, mollitia recusandae.
+						</div>
+					</div>
+				</div>
+	</div>
+
+<!-- FOOTER -->
+<footer class="container-fluid bg-dark-color" id="footer">
+	<div class="container">
+		<div class="row">
+			<!-- PARTE DE CIMA DO FOOTER -->
+			<div class="col-12" id="footer-top">
+				<div class="row justify-content-between">
+					<div class="col-4"><h2>Holms Clothes</h2></div>
+					<div class="col-4" id="social-icons">
+						<i class="bi bi-facebook"></i>
+						<i class="bi bi-instagram"></i>
+						<i class="bi bi-youtube"></i>
+						<i class="bi bi-twitter"></i>
+					</div>
+				</div>
+			</div>
+			<!--DETALHES FOOTER-->
+			<div class="col-12" id="footer-details">
+				<div class="row">
+					<div class="col-12 col-md-4" id="news-container">
+					<h4>Fique por dentro de nossas promoções!</h4>
+					<p class="secondary-color">Inscreva-se aqui</p>
+					<form>
+					 <div class="mb-3">
+					  <input type="email" class="form-control" placeholder="Digite o seu e-mail aqui">
+					 </div>
+					 <button class="btn btn-dark" type="submit">Inscrever-se</button>
+					</form>
+					</div>
+					<div class="col-12 col-md-4" id="contact-container">
+					<h4>Formas de contato</h4>
+					<p class="secondary-color">(42)9999-99999</p>
+					<p class="secondary-color">contato@holmsclothes.com.br</p>
+					</div>
+				</div>
+			</div>
+			<!--PARTE DE BAIXO FOOTER -->
+			<div class="col-12" id="footer-bottom"></div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

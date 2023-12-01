@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Pokémon World Tour</title>
+    <!-- CDN para importação do bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Anton', sans-serif;
+            color: #000;
+            /* Alterado para preto */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('IMG\\pokedex.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            background-color: transparent;
+            border: none;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            color: #000;
+            /* Alterado para preto */
+        }
+
+        .navbar-nav {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .header-text {
+            text-align: center;
+            margin: 50px 0;
+            color: yellow;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .container-content {
+            padding: 20px;
+            margin-bottom: 60px;
+            /* Adiciona uma margem inferior para evitar sobreposição com o rodapé */
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .pokedex-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .pokemon-card {
+            background-color: #a9a9a9;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .pokemon-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .btn-inserir,
+        .btn-loja {
+            background-color: #ffcc00;
+            color: #000;
+            /* Alterado para preto */
+            border: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Aula_bootstrap.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="formLogin.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrarUsuario.html">Cadastrar usuário</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="pokedex.html">Pokedex</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Frase "Pokedex" em amarelo com margens pretas -->
+    <div class="header-text">
+        <h1>Pokedex</h1>
+    </div>
+
+    <!-- Container da Pokedex -->
+    <div class="container-content">
+        <div class="pokedex-container">
+            <!-- Pokemon 1 -->
+            <div class="pokemon-card">
+                <img src="IMG\1.png" alt="Pokemon 1"
+                    class="pokemon-image">
+                <h4>Charmander</h4>
+                <p>Tipo: Fire</p>
+            </div>
+
+            <!-- Pokemon 2 -->
+            <div class="pokemon-card">
+                <img src="IMG\2.png" alt="Pokemon 2"
+                    class="pokemon-image">
+                <h4>Tyranitar (Shinny)</h4>
+                <p>Tipo: Rock & Dark</p>
+            </div>
+
+            <!-- Pokemon 3 -->
+            <div class="pokemon-card">
+                <img src="IMG\3.png" alt="Pokemon 3"
+                    class="pokemon-image">
+                <h4>Gardevoir</h4>
+                <p>Tipo: Psychic & Fairy </p>
+            </div>
+
+            <!-- Pokemon 4 -->
+            <div class="pokemon-card">
+                <img src="C:\Users\Igor\Desktop\Igor\Tecnologias Web\HTDOCS\Pokemon\IMG\4.png" alt="Pokemon 4"
+                    class="pokemon-image">
+                <h4>Salamance</h4>
+                <p>Tipo: Dragon & Flying</p>
+            </div>
+
+            <!-- Pokemon 5 -->
+            <div class="pokemon-card">
+                <img src="C:\Users\Igor\Desktop\Igor\Tecnologias Web\HTDOCS\Pokemon\IMG\5.png" alt="Pokemon 5"
+                    class="pokemon-image">
+                <h4>Gasty</h4>
+                <p>Tipo: Ghost & Poison</p>
+            </div>
+
+            <!-- Pokemon 6 -->
+            <div class="pokemon-card">
+                <img src="C:\Users\Igor\Desktop\Igor\Tecnologias Web\HTDOCS\Pokemon\IMG\6.png" alt="Pokemon 6"
+                    class="pokemon-image">
+                <h4>Metagross</h4>
+                <p>Tipo: Stell & Psychic</p>
+            </div>
+
+            <!-- Pokemon 7 -->
+            <div class="pokemon-card">
+                <img src="C:\Users\Igor\Desktop\Igor\Tecnologias Web\HTDOCS\Pokemon\IMG\7.png" alt="Pokemon 7"
+                    class="pokemon-image">
+                <h4>Bulbasauro</h4>
+                <p>Tipo: Grass & Poison</p>
+            </div>
+
+            <!-- Pokemon 8 -->
+            <div class="pokemon-card">
+                <img src="C:\Users\Igor\Desktop\Igor\Tecnologias Web\HTDOCS\Pokemon\IMG\8.png" alt="Pokemon 8"
+                    class="pokemon-image">
+                <h4>Ampharos</h4>
+                <p>Tipo: Eletric</p>
+            </div>
+
+            <!-- Pokemon 9 -->
+            <div class="pokemon-card">
+                <img src="C:\Users\Igor\Desktop\Igor\Tecnologias Web\HTDOCS\Pokemon\IMG\9.png" alt="Pokemon 9"
+                    class="pokemon-image">
+                <h4>Garchomp</h4>
+                <p>Tipo: Dragon & Ground </p>
+            </div>
+
+            <!-- Pokemon 10 -->
+            <div class="pokemon-card">
+                <img src="C:\Users\Igor\Desktop\Igor\Tecnologias Web\HTDOCS\Pokemon\IMG\10.png" alt="Pokemon 10"
+                    class="pokemon-image">
+                <h4>Primeape</h4>
+                <p>Tipo: Fighting</p>
+            </div>
+
+            <!-- Pokemon 11 -->
+            <div class="pokemon-card">
+                <img src="C:\Users\Igor\Desktop\Igor\Tecnologias Web\HTDOCS\Pokemon\IMG\11.png" alt="Pokemon 11"
+                    class="pokemon-image">
+                <h4>Lapras</h4>
+                <p>Tipo: Water & Ice</p>
+            </div>
+
+            <!-- Pokemon 12 -->
+            <div class="pokemon-card">
+                <img src="C:\Users\Igor\Desktop\Igor\Tecnologias Web\HTDOCS\Pokemon\IMG\12.png" alt="Pokemon 12"
+                    class="pokemon-image">
+                <h4>Butterfree</h4>
+                <p>Tipo: Bug & Flying</p>
+            </div>
+
+            <!-- Botão para Inserir Novos Pokemons -->
+            <div class="pokemon-card">
+                <button class="btn btn-inserir" onclick="window.location.href='inserir_pokemon.html'">Inserir Novos
+                    Pokemons</button>
+            </div>
+
+            <!-- Botão para ir para a Loja -->
+            <div class="pokemon-card">
+                <button class="btn btn-loja" onclick="window.location.href='loja.html'">Loja</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé fixo -->
+    <div class="footer">
+        <p>Sistema Pokemon</p>
+    </div>
+
+</body>
+
+</html>
