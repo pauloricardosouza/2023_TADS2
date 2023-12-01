@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrinho</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- CDNs para importação do Bootstrap-->
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Latest compiled JavaScript -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Fonte importada do google-->
+         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+          </style>
+          <link href="css/tabelas.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="container text-center">
+        <img src="img/guitara.jpg" style="width:200px;" title="Heavy Metal Store">
+        <h1 style="font-family: Nosifer;">Heavy Metal Store</h1>
+    </div>
+
+    <!--barra de navegação-->
+    
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" style="margin-bottom: 30px;"><!--configurações da barra de navegação-->
+    <div class="container-fluid"> <!--cria um container fluido para usar em celular-->
+      <div class="collapse navbar-collapse" id="mynavbar"> 
+        <ul class="navbar-nav me-auto"> <!--deixa a barra automatica-->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Página Inicial</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Formlogin.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FormUsuario.html">Cadastro</a>
+        </ul>
+        <!--carrinho de compras que leva para a pagina carrinho-->
+        <form class="d-flex"> <!--deixa para deixar a opção no fianl da barra-->
+            <a class="navbar-brand" href="carrinho.html"> <!--Link para a pagina carrinho-->
+                <img src="img/carrinho-de-compras.png" style="width: 50px;"><!--Imagem e configuração de imagem-->
+            </a>
+        </form>
+      </div>
+    </div>
+  </nav>
+          <!-- div de itens do carrinho-->
+          <div class="container mt-3"> <!--div principla-->
+            <h2>Seu Carrinho</h2>
+            <br>        
+            <table class="table table-dark table-hover"> <!--tabela preta com hover-->
+              <thead> <!--thead para separar os conteudos-->
+                <tr>
+                  <th>Produto</th>
+                  <th>Nome do Produto</th>
+                  <th>Preço</th>
+                </tr>
+              </thead> <!--fecha thead-->
+              <tbody><!--inica tbody-->
+                <tr>
+                  <th><img src="img/guitarra1.png" width="400"> </th>
+                  <td>GUITARRA MICHAEL GM227N ST ADVANCED</td>
+                  <td>R$ 940,90</td>
+                </tr>
+                <tr>
+                  <td><img src="img/guitarra-michael-gm850n-bk_ac44.png" width="400"></td>
+                  <td>GUITARRA MICHAEL GM850N SG HAMMER</td>
+                  <td>R$ 1999,50</td>
+                </tr>
+              </tbody><!--fecha tbody-->
+            </table> <!--fecha tabela-->
+            <a href="finalizarcompra.html"> <!--link para finalizar compra-->
+              <div class="container mt-3"><!--div de container para o botão-->
+                <div class="d-grid">
+                  <button type="button" class="btn btn-danger btn-block"><strong>Finalizar Compra</strong></button><!--botão para finalizar a compra-->
+                </div>
+              </div>
+            </a>
+          </div><!--fim da div principal-->
+
+          <!--brs por que o rodapé atrapalha a tabela-->
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <!-- Div do Rodapé (Fixa na base) -->
+        <div class="mt-5 bg-dark text-white text-center fixed-bottom">
+          <p>
+              Interfaces para um sistema de vendas de Guitarras<br>
+              Desenvolvido por
+              <b><a href="mailto:felypemazzorodrigues@gmail.com?subject=Tecnologias Web">felypemazzorodrigues@gmail.com</a></b> para utilização na disciplina de Tecnologias Web
+          </p>
+      </div>
+
+    </body>
+</html>

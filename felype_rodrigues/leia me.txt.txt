@@ -1,0 +1,8 @@
+A Heavy Metal Store é uma loja de guitarras onde o usuario pode se cadastrar, logar, visualizar os produtos, adicionar em seu carrinho de compras e finalizar a compra.
+
+Index eu fiz com base no site do professor, trocando as cores e adicionando as imagens do meu site.
+Visualizar produto também foi com base no código do professor, fiz uma tela bem simples mesmo.
+Carrinho eu quis simular um carrinho de compras e usei um bootstrap do w3schools para me ajudar, também peguei um botão e coloquei para o usuario finalizar a compra.
+Finalizar compra fiz coloquei só uma mensagem na tela informando que a compra foi feita com um link para voltar para a tela inicial.
+Tela de login fiz com base na do professor também
+Tela de cadastro fiz como se fosse uma tela de uma loja, pedindo endereço e informações do cartão, coloquei um check box com um concordo com os termos.

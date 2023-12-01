@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   
+
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body style="background-color: black;">
+   <!-- Cabeçalho da Página -->
+   <div class="" style="background-color: black;"  >
+    
+    <img src="img/logo.PNG"  style=" bottom:0; left: 0; object-fit: cover;" >
+</div>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: black; border-style: double; color: white;">
+    
+      <a class="navbar-brand" href="#"></a>
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ">
+                  <li class="nav-item">
+                      <a class="nav-link " href="paginainicial.html" title="Ir para a Página Inicial">Início</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="produtos.html" title="Ir para Produtos">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="login.html">
+                          <img src="img/iconeusuariocinza.svg" alt="login" style="width: 30px;">
+                      </a>
+                  </li>
+                  <li class="nav-item mr-auto">
+                      <a class="navbar-brand active" href="carrinho.html">
+                          <img src="img/carrinhobranco.svg" alt="Logo" style="width:40px;">
+                        </a>
+                      </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</nav>
+
+  <!--Container que abrigará conteúdo da página -->
+    <div class="container"  style="border-style: double; border-color: white;">
+      <!-- Tabela do carrinho de compras -->
+        <h2 style="color: white;">Carrinho de compras</h2>
+        <table class="table table-dark table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th>Produto</th>
+              <th>quantidade</th>
+              <th>preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th> <img src="img/bombada1.jpg" style="width: 90px;" alt=""> Camiseta Oversized Lay Made Dcunaly</th>
+              <th >1 unidade. TAM: M</th>
+              <th>R$125,99</th>
+            </tr>
+            <tr>
+              <th><img src="img/bombada2.jpg" width="90px" alt=""> Regata OversizeGym</th>
+              <th>2 Unidades. TAM:P</th>
+              <th>R$115,50</th>
+            </tr>
+            <tr>
+              <th><img src="img/bombado3.jpg" width="90px" alt=""> Camiseta Oversized Monster Suntle</th>
+              <th>1 Unidade. TAM: GG</th>
+              <th>R$ 130,99</th>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Botão de comprar -->
+        <button type="button" class="btn btn-danger"> Comprar </button>
+</div>
+
+
+
+<!-- Div do Rodapé (Fixa na base) -->
+<div class="mt-5  text-white text-center " style="background-color: black; border-style: double; color: white;">
+    <p>
+        OversizeGym<br>
+        entre em contato com a gente:
+        <b><a href="mailto:paulo.silva@ifpr.edu.br?subject=Tecnologias Web">OversizeGym@gmail.com</a></b> para esclarecer suas dúvidas!
+    </p>
+</div>
+</body>
+</html>

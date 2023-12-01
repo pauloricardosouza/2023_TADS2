@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+    </style>
+
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+    <!-- Cabeçalho da Página -->
+    <div class="container text-center">
+        <img src="img/guitara.jpg" style="width:200px;" title="Heavy Metal Store"> 
+        <h1 style="font-family: Nosifer;">Heavy Metal Store</h1>
+    </div>
+
+    <!--barra de navegação-->
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" style="margin-bottom: 30px;"><!--configurações da barra de navegação-->
+        <div class="container-fluid"> <!--cria um container fluido para usar em celular-->
+          <div class="collapse navbar-collapse" id="mynavbar"> 
+            <ul class="navbar-nav me-auto"> <!--deixa a barra automatica-->
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Página Inicial</a> <!--Link ativo-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Formlogin.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FormUsuario.html">Cadastro</a>
+            </ul>
+            <!--carrinho de compras que leva para a pagina carrinho-->
+            <form class="d-flex"> <!--deixa para deixar a opção no fianl da barra-->
+                <a class="navbar-brand" href="carrinho.html"> <!--Link para a pagina carrinho-->
+                    <img src="img/carrinho-de-compras.png" style="width: 50px;"><!--Imagem e configuração de imagem-->
+                </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;"> <!--container principal-->
+
+        <div class="alert alert-warning text-center" style="width:50%; margin:auto;"> <!--alert amarelo e centralizado-->
+            Há <strong>18</strong> modelos diferentes disponíveis em nosso estoque! <!--Mensagem com strong para deixar em negrito -->
+        </div>
+
+        <!-- Início da primeira linha da GRID -->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;"> <!--Configurações do card-->
+                    <img class="card-img-top" src="img/guitarra-michael-gm227n-ab_2626.png" title='guitarraMichaelVer' alt="guitarraMichaelVer">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>GUITARRA MICHAEL GM227N ST ADVANCED</b></h4>
+                        <p class="card-text"><b>R$ 940,90</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-danger">Ver Detalhes</a> <!--Link para Visualizar produto com botão vermelho-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/guitarra-michael-gm850n-bk_ac44.png" title='guitarraMichaelHam' alt="guitarraMichaelHam">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>GUITARRA MICHAEL GM850N SG HAMMER</b></h4>
+                        <p class="card-text"><b>R$ 1999,50</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-danger">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/guitarra-michael-gm217n-sk_1791.png" title='guitarraMichaelSTD' alt="guitarraMichaelSTD">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>GUITARRA MICHAEL GM217N ST STANDARD</b></h4>
+                        <p class="card-text"><b>R$ 799,00</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-danger">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/guitaele.webp" title='guitarraEletrica' alt="guitarraEletrica">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>GUITARRA SOLAR V1.6FRC+ FLOYD ROSE</b></h4>
+                        <p class="card-text"><b>R$  12.990,00</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-danger">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da primeira linha da GRID -->
+
+        <!-- Início da segunda linha da GRID-->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/voga2.webp" title='guitarraVogaAzul' alt="guitarraVogaAzul">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Guitarra Vogga VCG601N Stratocaster Sunburst Azul</b></h4>
+                        <p class="card-text"><b>R$ 859,90</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-danger">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/voga.webp" title='guitarraVogaAzulLa' alt="guitarraVogaAzulLa">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Guitarra Stratocaster Classic Vcg601 Sunburst Vogga</b></h4>
+                        <p class="card-text"><b>R$  822,51</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-danger">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/luggi.webp" title='guitarraLps' alt="guitarraLps">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Guitarra Strinberg Lps230 Les Paul Azul</b></h4>
+                        <p class="card-text"><b>R$ 1.439,90</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-danger">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/LPS230-BK-1.webp" title='guitarraLpsPreta' alt="guitarraLpsPreta">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Guitarra Les Paul Strinberg LPS230 Preta</b></h4>
+                        <p class="card-text"><b>R$ 1.597,84</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-danger">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da segunda linha da GRID -->
+
+    </div>
+
+    <!-- Div do Rodapé (Fixa na base) -->
+    <div class="mt-5 bg-dark text-white text-center fixed-bottom">
+        <p>
+            Interfaces para um sistema de vendas de Guitarras<br>
+            Desenvolvido por
+            <b><a href="mailto:felypemazzorodrigues@gmail.com?subject=Tecnologias Web">felypemazzorodrigues@gmail.com</a></b> para utilização na disciplina de Tecnologias Web
+        </p>
+    </div>
+
+</body>
+</html>

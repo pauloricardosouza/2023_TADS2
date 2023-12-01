@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+    </style>
+
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body">
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top azul">
+        <div class="container">
+           <a class="navbar-brand" href="index.html">
+            <img src="img/collectors`cut.png" alt="logotipo" style="width: 90px;" class="pull-left mx-2">
+           </a>
+        </div>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" title="Ir para a Página Inicial">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="produtos.html"title="Ir para Produtos">Produtos</a>
+                    </li class="nav-item">
+                        <a class="nav-link" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="pull-left mx-auto">
+                <a class="nav-link" href="">
+                    <img src="img/perfil-de-usuario.png" alt="perfil" style="height: 40px; width: 40px;" >
+                    <img src="img/adicionar-ao-carrinho.png" alt="carrinho" style="height: 40; width: 40px;">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+
+    <style>
+      table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+}
+    </style>
+    <!-- tabela de produtos-->
+
+    <table class="table table-striped container">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">ID</th>
+          <th scope="col">nome</th>
+          <th scope="col">quantidade em estoque</th>
+          <th scope="col">preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>476-556</td>
+          <td>Elden Ring -Radhan</td>
+          <td>3</td>
+          <td>R$ 599,99</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>872-534</td>
+          <td>Elde Ring - Maliketh</td>
+          <td>1</td>
+          <td>R$ 599,99</td>
+        </tr>
+        <tr>
+          <td scope="row">3</td>
+          <td>543-003</td>
+          <td>Pokémon - Equipe Rocket</td>
+          <td>1</td>
+          <td>R$ 449,99</td>
+        </tr>
+        <tr>
+          <td scope="roe">4</td>
+          <td>974-679</td>
+          <td>Pokémon - Familia Charizard</td>
+          <td>0</td>
+          <td>R$ 449,99</td>
+        </tr>
+        <tr>
+          <td scope="roe">5</td>
+          <td>124-732</td>
+          <td>Sahelanthropus</td>
+          <td>0</td>
+          <td>R$ 299,99</td>
+        </tr>
+        <tr>
+          <td scope="roe">6</td>
+          <td>109-998</td>
+          <td>Hellboy</td>
+          <td>4</td>
+          <td>R$ 200,99</td>
+        </tr>
+        <tr>
+          <td scope="roe">7</td>
+          <td>975-321</td>
+          <td>Pokémon - Gengar</td>
+          <td>2</td>
+          <td>R$ 129,99</td>
+        </tr>
+        <tr>
+          <td scope="roe">7</td>
+          <td>655-001</td>
+          <td>Nemesis</td>
+          <td>0</td>
+          <td>R$ 199,99</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>

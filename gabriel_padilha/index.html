@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+    </style>
+
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body">
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top azul">
+        <div class="container">
+           <a class="navbar-brand" href="index.html">
+            <img src="img/collectors`cut.png" alt="logotipo" style="width: 90px;" class="pull-left mx-2">
+           </a>
+        </div>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" title="Ir para a Página Inicial">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="produtos.html"title="Ir para Produtos">Produtos</a>
+                    </li class="nav-item">
+                        <a class="nav-link" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="pull-left mx-auto">
+                <a class="nav-link" href="">
+                    <img  src="img/perfil-de-usuario.png" alt="perfil" style="height: 40px; width: 40px;" >
+                    <img  src="img/adicionar-ao-carrinho.png" alt="carrinho" style="height: 40; width: 40px;">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
+    
+
+        <div class="alert alert-info text-center" style="width:40%; margin:auto;">
+            crie uma <a href="formUsuario.html"><strong>conta</strong></a> para comprar!&nbsp<i class="bi bi-emoji-smile"></i>
+        </div> 
+   
+
+        <!--carrousel-->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" style="width:30%; margin:auto;">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+        
+            <!-- The slideshow/carousel -->
+            <h1>produtos novos</h1>
+            <br>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/radahn.jpg" alt="Joaninha Vermelha - Foto 01" class="d-block w-100" height="400px">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/maliketh.jpg" alt="Joaninha Vermelha - Foto 02" class="d-block w-100" height="400px">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/equiperocket.jpg" alt="Joaninha Vermelha - Foto 03" class="d-block w-100" height="400px">
+                </div>
+            </div>
+        
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+      
+   
+
+        <!-- Início da primeira linha da GRID -->
+        <h1 class="text-center">Produtos em destaque</h1>
+        <hr>
+
+        <div class="row" style="margin-top:30px;">
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/radahn.jpg" title='Joaninha Vermelha' alt="Joaninha Vermelha" height="400px">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Elden Ring - Radhan</b></h4>
+                        <p class="card-text"><b>R$ 599,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/maliketh.jpg" title='Joaninha Amarela' alt="Joaninha Amarela" height="400px">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Elden Ring - maliketh</b></h4>
+                        <p class="card-text"><b>R$ 599,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/equiperocket.jpg" title='Joaninha Azul' alt="Joaninha Azul" height="400px">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Pokémon - Equipe Rocket</b></h4>
+                        <p class="card-text"><b>R$ 449,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/familia charizard.jpg" title='Joaninha Verde' alt="Joaninha Verde" height="500px">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Pokémon - Familia Charizard</b></h4>
+                        <p class="card-text"><b>R$ 449,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da primeira linha da GRID -->
+
+        <!-- Início da segunda linha da GRID-->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/sahelanthropus.jpg" title='Joaninha Vermelha' alt="Joaninha Vermelha" style="height: auto;">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Sahelanthropus</b></h4>
+                        <p class="card-text"><b>R$ 299,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/Hellboy.avif" title='Joaninha Branca' alt="Joaninha Branca" style="height: auto;">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Hellboy</b></h4>
+                        <p class="card-text"><b>R$ 200,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/gengar.jpeg" title='Joaninha Roxa' alt="Joaninha Roxa">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Pokémon - Gengar</b></h4>
+                        <p class="card-text"><b>R$ 129,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/Nemesis.jpg " title='Joaninha Dourada' alt="Joaninha Dourada">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Nemesis</b></h4>
+                        <p class="card-text"><b>R$ 199,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da segunda linha da GRID -->
+
+    </div>
+
+</body>
+</html>

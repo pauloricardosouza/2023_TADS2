@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Produto</title>
+    
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+    </style>
+
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+    <!-- Cabeçalho da Página -->
+    <div class="container text-center">
+        <img src="img/guitara.jpg" style="width:200px;" title="Heavy Metal Store">
+        <h1 style="font-family: Nosifer;">Heavy Metal Store</h1>
+    </div>
+   <!--barra de navegação-->
+    
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" style="margin-bottom: 30px;"><!--configurações da barra de navegação-->
+    <div class="container-fluid"> <!--cria um container fluido para usar em celular-->
+      <div class="collapse navbar-collapse" id="mynavbar"> 
+        <ul class="navbar-nav me-auto"> <!--deixa a barra automatica-->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Página Inicial</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Formlogin.html">Login</a><!--Link ativo-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FormUsuario.html">Cadastro</a>
+        </ul>
+        <!--carrinho de compras que leva para a pagina carrinho-->
+        <form class="d-flex"> <!--deixa para deixar a opção no fianl da barra-->
+            <a class="navbar-brand" href="carrinho.html"> <!--Link para a pagina carrinho-->
+                <img src="img/carrinho-de-compras.png" style="width: 50px;"><!--Imagem e configuração de imagem-->
+            </a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" style="width:30%; margin:auto;">
+
+            <!-- Indicadores de quantas imagens tem -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+        
+            <!-- Imagens do carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/guitarra3.png" alt="guitarra - foto01" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/guitarra4.png" alt="guitarra - foto02" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/guitarra5.png" alt="guitarra - foto03" class="d-block w-100">
+                </div>
+            </div>
+        
+            <!-- Botões de direita e esquerda-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <h2>GUITARRA MICHAEL GM227N ST ADVANCED</h2>
+        <br>
+        <br>
+        <h2><strong>R$ 940,90</strong></h2>
+        <br>
+        <a href="carrinho.html" class="btn btn-danger">Comprar</a> <!--Leva para a tela carrinho-->
+
+    </div>
+
+    <!-- Div do Rodapé (Fixa na base) -->
+    <div class="mt-5 bg-dark text-white text-center fixed-bottom">
+        <p>
+            Interfaces para um sistema de vendas de Guitarras<br>
+            Desenvolvido por
+            <b><a href="mailto:felypemazzorodrigues@gmail.com?subject=Tecnologias Web">felypemazzorodrigues@gmail.com</a></b> para utilização na disciplina de Tecnologias Web
+        </p>
+    </div>
+
+</body>
+</html>
