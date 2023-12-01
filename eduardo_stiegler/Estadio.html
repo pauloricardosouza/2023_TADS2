@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--DIMENSIONAMENTO MOBILE-->
+      <link rel="stylesheet" href="Style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      
+      <title>Estadio</title>
+  </head>
+  <body>
+
+      <header><!--logo do site-->
+          <img src="img/SANTOS.png" width="170px" height="170px">
+          <h1>SANTOS FC.</h1>
+      </header>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark"><!--barra de navegação-->
+        <a class="navbar-brand" href="Estadio.html">Estádio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Página Inicial</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="formLogin.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Elenco.html">Elenco</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Idolos.html">Ídolos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Escudos.html">Escudos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="loja.html">Loja</a>
+                  </li>
+              </ul>
+          </div>
+      </nav><!--fim da barra-->
+
+      <div class="mt-5 bg-dark text-white text-center fixed-bottom"><!--rodapé-->
+        <p>Santos F C.<br>2023 eduarpelau@gmail.com. Todos os direitos reservados.</p>
+      </div><!--final do rodapé-->
+
+      <section><!--informações sobre o estadio-->
+          <p>História:</p>
+          <p>A Vila Belmiro, situada no coração de Santos, é um marco histórico que testemunhou a evolução e o triunfo do Santos Futebol Clube ao longo de mais de um século. Inaugurado em 1916, o estádio começou como uma arena modesta, mas rapidamente se transformou no palco onde lendas do futebol brasileiro deixaram sua marca.</p>
+          <p>Desde a década de 1950, a Vila Belmiro tem sido palco de vitórias e conquistas incontáveis, incluindo os anos dourados com Pelé e companhia. A magia dos dribles, a precisão dos passes e a emoção dos gols foram registradas nas arquibancadas que, ao longo dos anos, se tornaram testemunhas silenciosas da história gloriosa do Peixe.</p>
+      </section><!--final das informações-->
+      <br><br>
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel"><!--carrossel-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-50" src="img/vila.webp" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-50" src="img/vilainside.jpg" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-50" src="img/vilaoutside.jpg" alt="Terceiro Slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+      </div><!--final do carrossel-->
+      <br><br>
+      <section><!--curiosidade sobre o estadiio-->
+          <p>A Vila Belmiro é frequentemente referida pelo nome oficial de "Estádio Urbano Caldeira". Inaugurado em 1916, o estádio é um dos mais antigos e emblemáticos do Brasil, sendo a casa do Santos Futebol Clube. O nome "Vila Belmiro" tornou-se uma expressão carinhosa utilizada pelos torcedores e pela mídia, e é, na verdade, uma homenagem à rua onde está situado.</p>
+          <p>O Estádio Urbano Caldeira, por sua vez, é uma reverência a Urbano Caldeira, um dos fundadores do Santos FC. Essa mudança de nome não diminui a importância histórica e emocional do estádio, mas adiciona um elemento de reconhecimento à figura de Urbano Caldeira na história do clube. Portanto, ao se referir</p>
+      </section><!--final das curiosidades-->
+      
+      <script>//funções do carrossel
+          document.addEventListener("DOMContentLoaded", function() {
+      // pula pro proximo
+      var nextButton = document.querySelector(".carousel-control-next");
+      nextButton.addEventListener("click", function() {
+        $('#carouselExampleIndicators').carousel('next');
+      });
+    });
+      </script><!--final da função-->
+      <br><br><br>
+  </body>
+</html>
