@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto - CpUStore</title>
+    
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style>
+
+    <!-- CDN da última versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 70px; /* Adicionando margem ao corpo para evitar sobreposição com o rodapé */
+        }
+
+        header {
+            background-color: #001f3f; /* Azul escuro */
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        .container-content {
+            margin-top: 30px;
+            margin-bottom: 120px; /* Aumentando a margem para garantir espaço para o rodapé */
+        }
+
+        h1, h2 {
+            color: #001f3f; /* Azul escuro */
+        }
+
+        form {
+            width: 100%;
+            max-width: 600px; /* Ajuste o valor conforme necessário */
+            margin: auto;
+        }
+
+        button {
+            background-color: #001f3f; /* Azul escuro */
+            color: #fff;
+        }
+
+        p, .footer p {
+            color: #eaeef3; /* Branco */
+        }
+
+        p a {
+            color: #fff; /* Branco */
+        }
+
+        .footer {
+            background-color: #001f3f; /* Azul escuro */
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            color: #fff; /* Branco */
+            margin-bottom: 0;
+        }
+
+        /* Adicionando alguma diferenciação */
+        .container-content {
+            background-color: #bfc7cf; /* Fundo mais claro */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Cabeçalho da Página -->
+    <div class="container text-center">
+        <img src="img/IMG2.png" style="width: 200px;" title="CpUStore">
+        <h1 style="font-family: Nosifer;">CpUStore</h1>
+    </div>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" title="Ir para a Página Inicial">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produto.html" title="Ir para Cadastro de Produtos">Cadastro de Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center container-content">
+
+        <h1>Cadastrar Produto:</h1>
+
+        <div class="container text-center">
+
+            <form action="#" method="POST" class="was-validated" enctype="multipart/form-data">
+
+                <div class="form-floating mb-3 mt-3">
+                    <input type="file" class="form-control" id="fotoProduto" name="fotoProduto" required>
+                    <label for="fotoProduto">Foto do Produto</label>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="nomeProduto" placeholder="Nome do Produto" name="nomeProduto" required>
+                    <label for="nomeProduto">Nome do Produto</label>
+                </div>
+
+                <div class="form-floating mb-3 mt-3">
+                    <textarea class="form-control" id="descricaoProduto" placeholder="Descrição do Produto" name="descricaoProduto" required></textarea>
+                    <label for="descricaoProduto">Descrição do Produto</label>
+                </div>
+
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="precoProduto" placeholder="Preço do Produto" name="precoProduto" required>
+                    <label for="precoProduto">Preço do Produto</label>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Cadastrar Produto</button>
+
+            </form>
+
+        </div>
+    
+    </div>
+
+   <!-- Div do Rodapé (Fixa na base) -->
+   <div class="footer">
+    <p>
+        Nacionais e Importados<br>
+        Desenvolvido por
+        <b><a href="cezarmoressantos@gmail.com">cezarmoressantos@gmail.com</a></b> para utilização na disciplina de Tecnologias Web
+    </p>
+</div>
+
+</body>
+</html>

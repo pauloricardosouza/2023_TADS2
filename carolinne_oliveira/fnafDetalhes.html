@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!--Container-fluind que abrigará o logotipo do sistema-->
+    <div class="Container-fluid text-center" style="margin-top: 30px; margin-bottom: 30px;">
+      <img class="card-img-top" src="img/logo-removebg-preview.png" alt="Logo" style="width:450px" title="CineFlow">
+    </div>
+
+    <!-- Barra de navegação -->
+    
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: rgb(0, 0, 0);">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+            <li>
+                <a class="nav-link" href="index.html">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Criar Conta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="feed.html">Feed</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="navegacao.html">Navegar</a>
+            </li>
+            </ul>
+            <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <a href="resultadosPesquisa.html" class="btn btn-primary btn-block float-end">Procurar</a><br>
+            </form>
+        </div>
+      </div>
+    </nav>
+
+      <!--Container que abrigará o conteúdo da página-->
+      <div class="container" style="margin-top: 30px; margin-bottom: 100px;">
+
+        <h1 style="margin-top: 30px;" class="text-center">Five Nights At Freddy's - O pesadelo sem fim</h1><br><br>
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/fnaf1.jpeg" alt="FNAF" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="img/fnaf2.jpg" alt="FNAF" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="img/fnaf3.gif" alt="FNAF" class="d-block w-100"><br><br>
+        </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+        </div>
+
+        <!-- Textos-->
+
+        <div class="mt-4 p-5 bg-secondary text-white rounded">
+
+        <h4>Sinopse</h4>
+        <p>Um dos filmes mais esperados para o mês de Halloween é Five Nights at Freddy's - O Pesadelo Sem Fim, que acaba de estrear nos cinemas de todo o mundo. 
+
+            Five Night at Freddy's é uma produção de terror da Blumhouse com a Universal Pictures adaptada de uma franquia de jogos de videogame. A trama acontece durante cinco noites no Freddy Fazbear's Pizza, uma pizzaria antiga que usava animatrônicos para divertir as crianças durante o dia. Porém, quando o sol desaparecia, esses robôs se transformavam em terríveis assassinos.
+        </p><br>
+
+        <h6>Data de Lançamento: 26 de outubro de 2023 (Brasil)</h6>
+        <h6>Diretora: Emma Tammi</h6>
+        <h6>Orçamento: 20 milhões USD</h6>
+        <h6>Adaptação de: Five nights At Freddy's</h6>
+
+        <!-- Avaliações-->
+        <br><br><h4> Avaliações:</h4>
+
+        <h6>Luiz Gustavo - há 1 hora atras...</h6>
+        <p>O filme tá muito bom. 
+
+            N quer levar susto veja em baixo 👇👇👇👇👇
+            
+            resposta direta:
+            O filme é perfeito, porém não está completo, tem mais 3 filmes depois deste. 
+            Para assistir, precisa saber a história, ou pelo menos a base dela, ou se não, mais perdido do que cego no tiroteio. </p>
+            <img src="img/staryellow-removebg-preview.png" alt="star" style="width:120px" title="star"></imgclass><br>
+
+        <h6>Ana Livia - há 50 minutos atras...</h6>
+        <p>O filme tá Excelente. 
+            É perfeito, porém não está completo. É preciso saber a história, ou pelo menos a base dela pra conseguir acompanhar...</p>
+            <img src="img/staryellow-removebg-preview.png" alt="star" style="width:120px" title="star"></imgclass><br>
+
+            <a href="feed.html" class="btn btn-info">Veja mais avaliações...</a><br><br>
+
+        <!-- Botão Avaliação -->
+        <div class="d-grid">
+            <a href="escreverAvaliação.html" class="btn btn-warning btn-block">Deixe aqui sua avaliação</a><br><br>
+        </div>
+
+        </div>
+        
+      </div>
+      <!--Container que abrigará o rodapé da página-->
+      <div class="container-fluid text-center bg-dark text-light ">
+        <p>
+            Interfaces de Sistema Web desenvolvidas por Carolinne Victória do Curso de TADS2
+            
+        </p>
+      </div>
+      
+</body>
+</html>

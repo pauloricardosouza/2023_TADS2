@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!--Container-fluind que abrigará o logotipo do sistema-->
+    <div class="Container-fluid text-center" style="margin-top: 30px; margin-bottom: 30px;">
+        <img class="card-img-top" src="img/logo-removebg-preview.png" alt="Logo" style="width:450px" title="CineFlow">
+    </div>
+
+    <!-- Barra de navegação -->
+    
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: rgb(0, 0, 0);">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                <li>
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Criar Conta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feed.html">Feed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="navegacao.html">Navegar</a>
+                </li>
+                </ul>
+                <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <a href="resultadosPesquisa.html" class="btn btn-primary btn-block float-end">Procurar</a><br>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--Container que abrigará o conteúdo da página-->
+    <div class="container" style="margin-top: 30px; margin-bottom: 100px;">
+
+        <!--Cria a linha para a Grid-->
+        <div class="row" style="margin-bottom: 30px;">
+            <h3>Filmes do Momento!</h3><br><br>
+            <div class="col-3">
+                <!--CArd do produto-->
+                <div class="card" style="width:100%">
+                <img class="card-img-top" src="img/fnaf.jpg" alt="Filme" title="FNAF">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="img/barbie.jpg" alt="Filme" title="Barbie">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="img/midsommar.jpg" alt="Filme" title="Midsommar">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="img/pearl.jpg" alt="Filme" title="pearl">
+                </div>
+            </div>
+            <a href="index.html" class="btn btn-primary btn-block">Carregar mais...</a><br><br>
+
+        </div><br>
+
+        <div class="row">
+            <h3>Os mais assustadores...</h3><br><br>
+            <div class="col-3">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="img/download (1).jpg" alt="Filme" title="Corra!">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="img/download.jpg" alt="Filme" title="Pânico">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="img/Parasita_ O melhor filme de 2019_.jpg" alt="Filme" title="Parasita">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="img/5c05c24e-4009-4723-a6a9-8f83cad813bf.jpg" alt="Filme" title="A órfã">  
+                </div>
+            </div>
+            <a href="#" class="btn btn-primary btn-block">Carregar mais...</a><br><br>
+        </div><br>
+
+        <div class="row">
+            <h3>Para aquecer o coração!</h3><br><br>
+            <div class="col-3">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="img/Summer.jpg" alt="Filme" title="500 dias com ela">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="img/BrilhoEterno.jpg" alt="Filme" title="Brilho Eterno de uma Mente sem Lembranças">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="img/asVantagens.jpg" alt="Filme" title="As vantagens de ser invisivel">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%">
+                    <img class="card-img-top" src="img/carol.jpg" alt="Filme" title="Carol">  
+                </div>
+            </div>
+            <a href="#" class="btn btn-primary btn-block">Carregar mais...</a><br><br>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+    <!--Container que abrigará o rodapé da página-->
+    <div class="container-fluid text-center bg-dark text-light ">
+        <p>
+            Interfaces de Sistema Web desenvolvidas por Carolinne Victória do Curso de TADS2
+            
+        </p>
+    </div>
+    
+</body>
+</html>
