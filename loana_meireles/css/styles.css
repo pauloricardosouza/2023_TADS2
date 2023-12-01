@@ -1,0 +1,47 @@
+.carousel-item img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+}
+
+.navbar-brand img {
+    width: 150px; 
+    height: auto;
+}
+
+.navbar-brand {
+    
+    padding: 10px; 
+}
+.logo {
+    width: 80px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+.carrinhonav img{
+    width: 7%;
+    z-index: auto;
+    position: absolute;
+    top: 50px; /* Ajuste a posição superior conforme necessário */
+    right: 160px;
+    object-fit: cover; 
+    cursor: pointer;
+}
+
+.col-md-6 img{
+    width: 60%;
+}
+
+.navbar-brand1 img{
+    width: 20%;
+}
+
+.carrinho-imagem {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    margin-right: 20px; 
+}
+
+.container{
+    background-color: rgb(228, 202, 137);
+}
