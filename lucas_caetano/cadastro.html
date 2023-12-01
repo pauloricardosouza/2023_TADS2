@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100 espaco-background">
+
+    <!-- Cabeçalho -->
+    <header class="mb-auto text-center">
+        <h1>Dark Place Of Space</h1>
+        <!-- Navegação -->
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="home.html"><img src="img/home1.png" alt="home" width="25px" height="25px"></a></li>
+                <li class="nav-item"><a class="nav-link" href="produto.html">Produtos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="clock.html"><img src="img/relogio.png" alt="Relogio" width="25px" height="25px"></a></li>
+                <li class="nav-item"><a class="nav-link" href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho" width="25px" height="25px"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Cadastro -->
+    <section id="cadastro" class="container mt-5">
+        <h2 class="text-center">Crie sua Conta</h2>
+
+        <!-- Exibição de erros -->
+        <div id="erro-mensagem" class="alert alert-danger" style="display: none;"></div>
+
+        <!-- Mensagem de cadastro realizado -->
+        <div id="sucesso-mensagem" class="alert alert-success" style="display: none;">
+            Cadastro realizado com sucesso! Redirecionando para a página inicial...
+        </div>
+
+        <form id="cadastro-form" onsubmit="return salvarCadastro(event)" class="needs-validation" novalidate method="post">
+
+            <!-- Nome -->
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
+                <div class="invalid-feedback">Por favor, insira seu nome.</div>
+            </div>
+
+            <!-- E-mail -->
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+                <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+            </div>
+
+            <!-- Login -->
+            <div class="form-group">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" class="form-control" required>
+                <div class="invalid-feedback">Por favor, escolha um nome de usuário.</div>
+            </div>
+
+            <!-- Senha -->
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" class="form-control" required>
+                <div class="invalid-feedback">A senha é obrigatória.</div>
+            </div>
+
+            <!-- Confirmar Senha -->
+            <div class="form-group">
+                <label for="confirma-senha">Confirmar Senha:</label>
+                <input type="password" id="confirma-senha" name="confirma-senha" class="form-control" required>
+                <div class="invalid-feedback">Por favor, confirme sua senha.</div>
+            </div>
+
+            <!-- Botão de Cadastro -->
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="mt-auto text-center" style="background-color: rgba(49, 17, 17, 0.5); color: white;">
+        <p>&copy; 2023 by: Lucas</p>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Seu script JavaScript -->
+
+    <script>
+        function salvarCadastro(event) {
+            // Lógica de validação e envio do formulário
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+            var confirmaSenha = document.getElementById('confirma-senha').value;
+    
+            // Validar se todos os campos estão preenchidos
+            if (!nome || !email || !login || !senha || !confirmaSenha) {
+                exibirErro('Todos os campos são obrigatórios.');
+                event.preventDefault(); // Evita o envio do formulário
+                return false;
+            }
+    
+           
+            if (!validarEmail(email)) {
+                exibirErro('Por favor, insira um e-mail válido.');
+                event.preventDefault(); // Evita o envio do formulário
+                return false;
+            }
+    
+            // Exemplo de validação para senha
+            if (senha !== confirmaSenha) {
+                exibirErro('As senhas não coincidem.');
+                event.preventDefault(); // Evita o envio do formulário
+                return false;
+            }
+    
+            // Simula um tempo de espera para a mensagem de sucesso
+            setTimeout(function () {
+                exibirSucesso();
+            }, 1000);
+    
+            return true; // Permite o envio do formulário
+        }
+    
+        function validarEmail(email) {
+            
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+    
+        function exibirErro(mensagem) {
+            var erroMensagem = document.getElementById('erro-mensagem');
+            erroMensagem.innerText = mensagem;
+            erroMensagem.style.display = 'block';
+        }
+    
+        function exibirSucesso() {
+            var sucessoMensagem = document.getElementById('sucesso-mensagem');
+            sucessoMensagem.style.display = 'block';
+    
+            // Redireciona para a página inicial após 1 segundo
+            setTimeout(function () {
+                window.location.href = 'home.html';
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>

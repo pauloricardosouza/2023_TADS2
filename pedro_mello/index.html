@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+    </style>
+
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+    <!-- Cabeçalho da Página -->
+    <div class="container text-center">
+        <img src="img/capa.jpg" style="width:200px;" title="capa">
+        <h1 style="font-family: Nosifer;">ultra filmes</h1>
+    </div>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" title="Ir para a Página Inicial">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">destaque da semana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Pesquisar">
+                    <a href="pesquisarFilme.html"><button class="btn btn-primary" type="button">Pesquisar</button></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
+
+        <div class="alert alert-info text-center" style="width:50%; margin:auto;">
+            Há <strong>8</strong>  filmes em destaque na tela! &nbsp<i class="bi bi-emoji-smile"></i>
+        </div>
+
+        <!-- Início da primeira linha da GRID -->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top rounded-circle" src="img/filme 1.jpg" title='Homem aranha' alt="filme 1">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>filme 1</b></h4>
+                        <p class="card-text"><b>Homem aranha</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-dark">Ver sinopse do filme</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/filme 2.jpg" title='Os Incriveis' alt="filme 2">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>filme 2</b></h4>
+                        <p class="card-text"><b>Os Incriveis</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-dark">Ver sinopse do filme</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/filme 3.jpg" title='Guardiões da Galáxia' alt="filme 3">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>filme 3</b></h4>
+                        <p class="card-text"><b>Guardiões da Galáxia</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-dark">Ver sinopse do filme</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/filme 4.jpg" title='Tartarugas Ninja 2014' alt="filme 4">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>filme 4</b></h4>
+                        <p class="card-text"><b>Tartarugas Nilja 2014</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-dark">Ver sinopse do filme</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da primeira linha da GRID -->
+
+        <!-- Início da segunda linha da GRID-->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/filme 5.jpeg" title='As Marvels' alt="filme 5">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>filme 5</b></h4>
+                        <p class="card-text"><b>As Marvels</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-dark">Ver sinopse do filme</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/filme 6.jpg" title='Besouro Azul' alt="filme 6">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>filme 6</b></h4>
+                        <p class="card-text"><b>Besouro Azul</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-dark">Ver sinopse do filme</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/filme 7.jpg" title='Esquadrão Suicida' alt="filme 7">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>filme 7</b></h4>
+                        <p class="card-text"><b>Esquadrão Suicida</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-dark">Ver sinopse do filme</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/filme 8.jpg" title='Quarteto fantástico e o Surfista Prateado' alt="Joaninha Dourada">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>filme 8</b></h4>
+                        <p class="card-text"><b>Quarteto fantástico e o Surfista Prateado</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-dark">Ver sinopse do filme</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da segunda linha da GRID -->
+
+    </div>
+
+    <!-- Div do Rodapé (Fixa na base) -->
+    <div class="mt-5 bg-dark text-white text-center fixed-bottom">
+        <p>
+            Interfaces para um sistema de filmes para as pessoas<br>
+            Desenvolvido por
+            <b><a href="mailto:paulo.silva@ifpr.edu.br?subject=Tecnologias Web">Pedro Luis de Mello</a></b> para utilização na disciplina de Tecnologias Web
+        </p>
+    </div>
+
+</body>
+</html>

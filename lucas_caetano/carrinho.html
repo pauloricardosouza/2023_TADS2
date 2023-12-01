@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <title>Itens No Carrinho</title>
+</head>
+<body class="d-flex flex-column min-vh-100 espaco-background">
+
+    <!-- Cabeçalho -->
+    <header class="mb-auto text-center">
+        <h1>Dark Place Of Space</h1>
+        <!-- Navegação -->
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="home.html"><img src="img/home1.png" alt="home" width="25px" height="25px"></a></li>
+                <li class="nav-item"><a class="nav-link" href="produto.html">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="clock.html"><img src="img/relogio.png" alt="Relogio"  width="25px" height="25px" ></a></li>
+                <li class="nav-item"><a class="nav-link" href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho" width="25px" height="25px" ></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrinho de Compras -->
+    <section id="carrinho" class="container mt-5 text-center">
+        <h2>Carrinho Espacial</h2>
+        <ul id="lista-carrinho" class="list-group"></ul>
+        <p id="total-carrinho">Total: R$ 99,00</p>
+        <div id="acao-carrinho">
+            <button class="btn btn-primary" onclick="realizarAcaoCarrinho()">Comprar</button>
+            <button class="btn btn-secondary" onclick="voltarParaPaginaAnterior()">Voltar</button>
+        </div>
+    </section>
+
+    <script src="Carrinho.js"></script>
+    <script>
+        function voltarParaPaginaAnterior() {
+            window.history.back();
+        }
+
+        function realizarAcaoCarrinho() {
+            // Lógica para a ação no carrinho
+            alert("Parabens, compra feita com Sucesso!");
+        }
+    </script>
+
+    <!-- Rodapé -->
+    <footer class="mt-auto text-center  mt-5 text-center" style="background-color: rgba(49, 17, 17, 0.5); color: white;">
+        <p>&copy; 2023 by: Lucas</p>
+    </footer>
+
+</body>
+</html>

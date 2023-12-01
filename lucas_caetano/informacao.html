@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/produto.css"> 
+    <title>Mais Informações</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100 espaco-background">
+
+    <!-- Cabeçalho -->
+    <header class="mb-auto text-center">
+        <h1>Dark Place Of Space</h1>
+        <!-- Navegação -->
+        <nav>
+            <ul class="nav justify-content-center navbar-expand-lg navbar-light">
+                <li class="nav-item"><a class="nav-link" href="home.html"><img src="img/home1.png" alt="home" width="25px" height="25px"></a></li>
+                <li class="nav-item"><a class="nav-link" href="produto.html">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="clock.html"><img src="img/relogio.png" alt="Relogio"  width="25px" height="25px"></a></li>
+                <li class="nav-item"><a class="nav-link" href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho" width="25px" height="25px"></a></li>
+        </nav>
+    </header>
+ <!-- conteudo -->
+ <section id="informacoes" class="container mt-5">
+    <h2 class="display-4 text-center">Detalhes da ACC</h2>
+    <div class="produto-info">
+        <img src="img/img 2.jpg" class="d-block mx-auto img-fluid" alt="Nome do Produto">
+        <h3 class="text-center">Conta 1</h3>
+        <p class="text-center">Ótima acc para quem está iniciando no game.</p>
+        <p class="text-center">Preço: R$99,00</p>
+        <div class="text-center">
+            <button class="btn btn-primary" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+            <button class="btn btn-secondary" onclick="voltarParaPaginaAnterior()">Voltar</button>
+        </div>
+    </div>
+</section>
+    <!-- Rodapé -->
+    <footer class="mt-auto text-center  mt-5 text-center" style="background-color: rgba(49, 17, 17, 0.5); color: white;">
+        <p>&copy; 2023 by: Lucas</p>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+                function voltarParaPaginaAnterior() {
+            window.history.back();
+        }
+        function adicionarAoCarrinho() {
+            // Lógica para adicionar ao carrinho
+            alert("Produto adicionado ao carrinho!");
+            window.location.href = "carrinho.html";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/produto.css">
+
+    <title>Produtos</title>
+    
+</head>
+<body class="d-flex flex-column min-vh-100 espaco-background"></body>
+
+
+    <!-- Cabeçalho -->
+    <header class="mb-auto text-center ">
+        <h1>Dark Place Of Space</h1>
+        <!-- Navegação -->
+        <nav>
+            <ul class="nav justify-content-center navbar-expand-lg navbar-light">
+                <li class="nav-item"><a class="nav-link" href="home.html"><img src="img/home1.png" alt="home" width="25px" height="25px"></a></li>
+                <li class="nav-item active"><a class="nav-link" href="produto.html">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="clock.html"><img src="img/relogio.png" alt="Relogio"  width="25px" height="25px"></a></li>
+                <li class="nav-item"><a class="nav-link" href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho" width="25px" height="25px"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- Produtos -->
+     <section id="produtos" class="container mt-5">
+        <h2 class="display-4 text-center">ACCs em Destaque</h2>
+
+        <!-- Carousel -->
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Produto 1 -->
+                <div class="carousel-item active" onclick="redirectTo('detalhes_produto1.html')">
+                    <div class="product-info" data-product-name="Acc MX1" data-product-description="Ótima para Iniciantes." data-product-price="Preço: R$ 50,00">
+                        <img src="img/1.png" class="d-block w-100 img-fluid" alt="Acc MX1">
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="carousel-item" onclick="redirectTo('detalhes_produto2.html')">
+                    <div class="product-info" data-product-name="Acc AG1" data-product-description="Conta Full" data-product-price="Preço: R$ 120,00">
+                        <img src="img/img 2.jpg" class="d-block w-100 img-fluid" alt="Acc AG1">
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="carousel-item" onclick="redirectTo('detalhes_produto3.html')">
+                    <div class="product-info" data-product-name="Acc XYZ" data-product-description="Descrição do produto XYZ." data-product-price="Preço: R$ 80,00">
+                        <img src="img/img 3.png" class="d-block w-100 img-fluid" alt="Acc XYZ">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev" id="prevBtn">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next" id="nextBtn">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- Botão Mais Informações -->
+        <div class="text-center mt-3">
+            <a href="informacao.html" class="btn btn-primary">Mais Informações</a>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="mt-auto text-center class="container mt-5 text-center style="background-color: rgba(49, 17, 17, 0.5); color: white;">
+        <p>&copy; 2023 by: Lucas</p>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Carousel Slide Event -->
+    <script>
+        $(document).ready(function () {
+            $('#carouselExample').on('slide.bs.carousel', function (event) {
+                // Enable carousel controls after the slide
+                document.getElementById('prevBtn').style.pointerEvents = 'auto';
+                document.getElementById('nextBtn').style.pointerEvents = 'auto';
+            });
+    
+            function redirectTo(url) {
+                window.location.href = url;
+                // Disable carousel controls after redirect
+                document.getElementById('prevBtn').style.pointerEvents = 'none';
+                document.getElementById('nextBtn').style.pointerEvents = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

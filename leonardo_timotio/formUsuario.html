@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuário</title>
+    
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+    </style>
+
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Link para Fonte utilizada no Login (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');  
+    </style>
+
+</head>
+<body style="background-color: rgb(0, 0, 0)">
+     <!-- Barra de Navegação -->
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PaginaInicial.html" title="Ir para a Página Inicial">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="serie.html" title="Ver as Séries">Catálogo</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Cabeçalho da Página -->
+        <div class="container text-center">
+            <img src="img/Game On.png" style="width:300px;" title="Logo">
+            
+        </div>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
+
+        <h1>Cadastre-se:</h1>
+
+<div class="container text-center" style="width:30%;">
+
+  <form action="#" method="POST" class="was-validated" enctype="multipart/form-data" onsubmit="return validateForm()">
+
+
+    <div class="form-floating mb-3 mt-3">
+      <input type="text" class="form-control" id="nomeUsuario" placeholder="Informe o seu nome completo" name="nomeUsuario" required>
+      <label for="text">Login </label>
+    </div>
+
+
+
+    <div class="form-floating mb-3 mt-3">
+      <input type="email" class="form-control" id="emailUsuario" placeholder="Informe o seu email" name="emailUsuario" required>
+      <label for="email">Email</label>
+    </div>
+
+
+    <div class="form-floating mt-3 mb-3">
+      <input type="password" class="form-control" id="senhaUsuario" placeholder="Informe a sua senha" name="senhaUsuario" required>
+      <label for="pwd">Senha</label>
+    </div>
+
+    <div class="form-floating mt-3 mb-3">
+      <input type="password" class="form-control" id="confirmarSenhaUsuario" placeholder="Informe a sua senha novamente" name="confirmarSenhaUsuario" required>
+      <label for="pwd">Confirme a Senha</label>
+    </div>
+    <div class="form-floating mb-3 mt-3">
+      <input type="date" name="dataNasc" value="0000-00-00" class="form-control" id="dataNasc" placeholder="Informe sua Data de Nascimento" name="dataNasc" required>
+      <label for="dataNasc">Data de Nascimento</label>
+    </div>
+    <div class="form-floating mb-3 mt-3">
+      <select class="form-select" id="gostofavorito" name="Gosto Favorito" required>
+        <option value="terror">Terror</option>
+        <option value="suspense">Suspense</option>
+        <option value="drama">Drama</option>
+        <option value="casos policiais">Casos Policiais</option>
+        <option value="comedia" selected>Comédia</option>
+        <option value="outro">outro</option>
+      </select>
+      <label for="Gosto">Gosto Favorito</label>
+      <div class="valid-feedback"></div>
+      <div class="invalid-feedback"></div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Entrar</button>
+
+  </form>
+
+</div>
+
+<script>
+  function validateForm() {
+    var nome = document.getElementById("nomeUsuario").value;
+    var email = document.getElementById("emailUsuario").value;
+    var senha = document.getElementById("senhaUsuario").value;
+    var confirmarSenha = document.getElementById("confirmarSenhaUsuario").value;
+    var dataNascimento = document.getElementById("dataNasc").value;
+
+    if (nome === '' || email === '' || senha === '' || confirmarSenha === '' || dataNascimento === '') {
+      alert("Por favor, preencha todos os campos!");
+      return false;
+    }
+
+    return true;
+  }
+</script>
+    </div>
+
+  <!-- Div do Rodapé (Fixa na base) -->
+  <div class="mt-5 bg-dark text-white text-center fixed-bottom">
+    <p>
+        Site de Streaming<br>
+        Desenvolvido por
+        <b><a href="mailto:paulo.silva@ifpr.edu.br?subject=Tecnologias Web">Leonardo da Silva Timótio</a></b> para utilização na disciplina de Tecnologias Web
+    </p>
+</div>
+
+</body>
+
+</html>

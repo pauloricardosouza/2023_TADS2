@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body class="d-flex flex-column min-vh-100 espaco-background">
+
+    <!-- Cabeçalho -->
+    <header class="mb-auto text-center">
+        <h1>Dark Place Of Space</h1>
+        <!-- Navegação -->
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="home.html"><img src="img/home1.png" alt="home" width="25px" height="25px"></a></li>
+                <li class="nav-item"><a class="nav-link" href="produto.html">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                <li class="nav-item active"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="clock.html"><img src="img/relogio.png" alt="Relogio" width="25px" height="25px"></a></li>
+                <li class="nav-item"><a class="nav-link" href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho" width="25px" height="25px"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Login -->
+    <section id="login" class="container mt-5 ">
+        <h2>Login</h2>
+        <form id="form-login" onsubmit="realizarLogin(event)">
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" class="form-control" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" class="form-control" required>
+
+            <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="mt-auto text-center  mt-5 text-center" style="background-color: rgba(49, 17, 17, 0.5); color: white;">
+        <p>&copy; 2023 by: Lucas</p>
+    </footer>
+
+    <!-- Seu Script -->
+    <script src="SeuScript.js"></script>
+    <script>
+        function realizarLogin(event) {
+            event.preventDefault();
+
+            const usuario = document.getElementById("usuario").value;
+            const senha = document.getElementById("senha").value;
+
+            // Simulação de processo de login
+            if (usuario === "usuario" && senha === "senha") {
+                alert("Login bem-sucedido! Redirecionando para a página inicial.");
+                window.location.href = "home.html";
+            } else {
+                alert("Usuário ou senha incorretos. Tente novamente.");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+    </style>
+
+    <!-- CDN da última versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Link para Fonte utilizada no Login (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');  
+    </style>
+
+    <style>
+        /* Estilos para a tabela */
+        .table-custom {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        .table-custom th,
+        .table-custom td {
+            border: 1px solid #fff;
+            padding: 8px;
+            text-align: left;
+            color: #fff;
+        }
+
+        .table-custom th {
+            background-color: #333;
+        }
+
+        .table-custom tbody tr:nth-child(even) {
+            background-color: #000;
+        }
+
+        .table-custom tbody tr:nth-child(odd) {
+            background-color: #a50000;
+        }
+
+        .table-custom tbody tr:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PaginaInicial.html" title="Ir para a Página Inicial">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="serie.html" title="Ver as Séries">Catálogo</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav> 
+            <!-- Cabeçalho da Página -->
+            <div class="container text-center">
+                <img src="img/Game On.png" style="width:300px;" title="Logo" Align="right" >
+            </div>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-left" style="margin-top: 30px; margin-bottom: 100px;">
+        <div class="table-responsive">
+            <table class="table-custom">
+                <!-- ... Conteúdo da tabela ... -->
+                <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Nome</th>
+                      <th>Categoria</th>
+                      <th>Avaliação</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Doidos à Solta</td>
+                      <td>Comédia</td>
+                      <td>5.7</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Fada Madrinha</td>
+                      <td>Comédia</td>
+                      <td>6.7</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Psycho</td>
+                      <td>Terror</td>
+                      <td>8.9</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>O diabo veste prada</td>
+                      <td>Terror</td>
+                      <td>7.7</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Narcos</td>
+                      <td>Casos Criminais</td>
+                      <td>8.4</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>MindHunter</td>
+                      <td>Casos Criminais</td>
+                      <td>9.1</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Scooby-Doo</td>
+                      <td>Desenho</td>
+                      <td>9.3</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Dora Aventureira</td>
+                      <td>Desenho</td>
+                      <td>7.5</td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Div do Rodapé (Fixa na base) -->
+    <div class="mt-5 bg-dark text-white text-center fixed-bottom">
+        <p>
+            Site de Streaming<br>
+            Desenvolvido por
+            <b><a href="mailto:paulo.silva@ifpr.edu.br?subject=Tecnologias Web">Leonardo da Silva Timótio</a></b> para utilização na disciplina de Tecnologias Web
+        </p>
+    </div>
+
+</body>
+</html>

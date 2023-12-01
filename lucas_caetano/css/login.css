@@ -1,0 +1,90 @@
+nav {
+    background-color: rgba(179, 86, 86, 0.5);
+    text-overflow: ellipsis;
+    border-radius: 50%;
+    position: relative;
+    transition: height 0.3s; /* Adicionando uma transição para suavizar a mudança de altura */
+    overflow: hidden; /* Evita que os itens da navegação se espalhem quando ela é reduzida */
+}
+
+nav:hover {
+    height: 50px; /* Ajuste a altura desejada quando o mouse estiver sobre a navegação */
+}
+
+/* Ajusta a proporção dos itens internos (links) */
+nav:hover a {
+    transform: scale(1.5); /* Ajuste o valor conforme necessário para a escala desejada */
+    transition: transform 0.3s; /* Adicionando uma transição para suavizar o aumento de tamanho */
+    margin: 0 10px; /* Ajuste a margem conforme necessário para afastar os itens */
+}
+
+/* Centralizar a navegação */
+nav.navbar {
+    margin: 0 auto;
+}
+
+body {
+
+    background-color: rgb(48, 80, 112);
+    color: #343a40;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    transition: color 0.3s;
+    
+
+}
+
+header h1:hover {
+    color: #ffc107; /* Amarelo ao passar o mouse */
+}
+
+nav {
+    background-color: 0,0,0,0;
+    position: relative;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none; /* Remover sublinhado padrão */
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav a:hover {
+    color: #ffc107; /* Amarelo ao passar o mouse */
+}
+
+#login {
+    background-color: #200b0b;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: inherit;
+    box-shadow: 0 0 10px 0 #d3d3d3;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+}
+.espaco-background {
+    background-image: url('/img/espaco.png'); /* Substitua pelo caminho da sua imagem espacial */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso garante que o background permaneça fixo enquanto a página rola */
+    color: white; /* Ajuste a cor do texto para contrastar com o background */
+}
