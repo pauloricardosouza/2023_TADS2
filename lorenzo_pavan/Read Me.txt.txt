@@ -1,0 +1,43 @@
+Trabalho de Tecnologias Web
+Aluno: Lorenzo Bonin Pavan
+Tema: Site sobre o jogo Saint Seiya Awakening
+
+-------OBJETIVO DO SITE E FUNCIONALIDADES---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O objetivo do site é informar sobre os personagens para que eu não tenha que fazer no google Planilhas. Por isso o site conta(vai contar) com um resumo básico sobre os personagens, suas habilidades, seus upskills e seus itens.
+O usuario pode se cadastrar, fazer login, cadastrar seus personagens, gereciar seus personagens e visualizar personagens já cadastrados no site. O admin pode listar os usuarios e banir usuários.
+
+-------TELA INICIAL E BARRA DE NAVEAGAÇÃO---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A tela inicial ou index, foi totalmente baseada no site disponibilizado pelo professor "Joaninhas TB", foi colocado alguns dos personagens do jogo para simular como se cada um tivesse uma tela de visualizar.
+Os personagens estão em cards usando rows para poderem ficar ordenados quatro a cada fileira, neles tem a foto do personagem, sua função e um botão para ver mais detalhes.
+Também foi implementado uma barra de navegação responsiva com base no site "Joaninhas TB" porém com um dropdown, para poder ter mais opções sem tomar muito da barra de navegação, e uma barra de pesquisa.
+
+-------VISUALIZAR PERSONAGENS---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A tela de visualiar personagens também foi baseada no site do professor, nela tem um carroseul com cinco imagens, uma do personagens e quatro das suas habilidades. 
+Abaixo de o nome e sua função, separado por um linha temos uma breve descrição das mecanicas do personagem.
+Para evitar muita informação na tela foi implementado um collapse que contém os "upskills" e os "cosmos" referentes ao personagem. No collapse de cosmos tem um botão para onde obter que leva para a página de cosmos.
+Logo abaixo um botão de "Adicionar aos meus personagens" que será o botão para adicionar o personagem a lista do usuário.
+
+-------Cosmos---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A tela de cosmos é bem simples, é só uma imagem de guia. Retirada do discord/A121DAAN-Comunidade.
+
+-------Cadastro---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A tela de cadastro fiz para ser uma tela rápida de cadastro, sem muitas opções, apenas o necessário para ser um site de comunidade. O design foi a gosto meu, acho que dois campos um do lado do outro fica melhor para preencher.
+Cada campo é um required, ou seja o usuário não pode seguir até preencher todas. O email tem type email, para ele pedir pelo @. A senha é um password para não mostrar a senha.
+Nela também coloquei um link para levar para tela de login.
+E quando se cadastra o site leva para a "Tela de cadastro" onde mostra que o cadastro foi bem sucedido.
+
+-------Login---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A tela de Login é uma tela classica que tem email, com type email e required, e senha, com type password e required, coloquei um botão lembre de mim, caso o usuário queria gravar seus dados.
+Coloquei um link para ir para a tela de cadastro e o botão leva para a página inicial.
+
+-------Listar Usuarios---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A tela foi baseada num dos códigos feito em sala de aula. Só adicionei um botão para o administrador poder banir usuários.Usei essa estrutura pois gostei de como ela ficou.
+
+-------Cadastrar Personagens---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A tela de cadastrar personagens tem poucos elementos.O primeiro é um select com o nome dos personagens assim evitando que o usuário cometa algum erro de digitação pois o personagem estará pré cadastrado no banco de dados.
+Ele apenas vai adicionar o que o usuário cadastrar a seguir. A foto também é para ser pré cadastrada assim quando o usuário escolher o nome do personagem a foto aparece ali.
+Um radio para o usuario não ter que digitar e não cometer nenhum erro de digitação, ele só vai lá e seleciona quantas estrelas o personagem dele tem.
+Os upskills é o unico campo de texto mesmo porém ele também será limitado apenas números de 1 à 5, já que as habilidades dos personagens somente podem ser aprimoradas até 5 ou seja o máximo é 5555.
+
+-------Meus Personagens---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A tela de meus personagens, como o nome já diz, terá uma lista dos personagens que o usuário possui, nela terá os dados cadastrados pelo usuário e ele também terá liberdade para adicionar, editar ou remover os personagens.

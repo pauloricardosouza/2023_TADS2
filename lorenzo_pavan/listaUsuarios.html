@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Personagem</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- CDNs para importação do Bootstrap-->
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Latest compiled JavaScript -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Fonte importada do google-->
+         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+          </style>
+          <link href="css/tabelas.css" rel="stylesheet">
+    </head>
+    <body>
+      <!-- Container para imagem e titulo da pagina-->
+        <div class="container-fluid text-center">
+            <img src="img/ssa.png" style="width: 200px;" title="Saint Seiya: Awakening">
+            <h1 style="font-family: Nosifer;">Guia de Saint Seiya: Awakening</h1>
+        </div>
+        <!-- Barra de navegação-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" style="margin-bottom: 30px;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)">
+                <img src="img/ssa.png" style="width: 40px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="meusPersonagens.html">Meus personagens</a>
+                  </li>
+                  <!-- Dropdown com mais informações-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Mais</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="cosmo.html">Drop de Cosmos</a></li>
+                      <li><a class="dropdown-item active" href="listaUsuarios.html">Lista de usuários</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- Barra de pesquisa-->
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn btn-primary" type="button">Pesquisar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <!-- Inicio da div para a tela de usuarios cadastrados-->
+        <div class="divPrincipal">
+            <h3 class="h3" style="text-align: center;">Usuários Cadastrados:</h3>
+            <div class="divTabela">
+                <h4>Total de Usuários Cadastrados:</h4>
+                <!-- Tabela com os dados-->
+                <table border="1">
+                    <tr>
+                        <th>ID</th>
+                        <th>Foto</th>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Email</th>
+                        <th>Servidor</th>
+                        <th>Sexo</th>
+                        <!-- Gerenciar para caso o usuario precise ser banido-->
+                        <th>Gerenciar</th>
+                    </tr>
+                    <!-- Dados fictícios -->
+                    <tr>
+                        <td>001</td>
+                        <th><img src="img/faz o L.jpg" width="150"> </th>
+                        <td>Mario</td>
+                        <td>Bros</td>
+                        <th>mariofazol@koopa.com</th>
+                        <td>140-Frog</td>
+                        <td>M</td>
+                        <td><img src="img/banir-usuario.png" title="banir Usuário" width="50"> </td>
+
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <th><img src="img/Lugi_nextbot.webp" width="150"> </th>
+                        <td>Luigi</td>
+                        <td>Bros</td>
+                        <th>marioverde@koopa.com</th>
+                        <td>140-Frog</td>
+                        <td>O</td>
+                        <td><img src="img/banir-usuario.png" title="banir Usuário" width="50"> </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--Rodapé responsivo-->
+        <div class="mt-5 bg-dark text-white text-center fixed-bottom">
+            <p>
+              Site de Blog de Cavaleiros do Zodiaco Awakening para o Trabalho de Tecnologias Web<br>
+              Desenvolvido por
+              <b><a href="mailto:lorenzo.boninp@gmail.com?subject=Tecnologias Web">lorenzo.boninp@gmail.com</a></b> Cursando de Ánalise e Desenvolvimento de Sistema
+            </p>
+          </div>
+
+    </body>
+</html>

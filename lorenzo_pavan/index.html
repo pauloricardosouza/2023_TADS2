@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Inicial</title>
+        <!-- CDNs para importação do Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Fonte importada do google-->
+         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+          </style>
+    </head>
+    <body>
+      <!--Container para Nome do site e Imagem -->
+        <div class="container-fluid text-center">
+            <img src="img/ssa.png" style="width: 200px;" title="Saint Seiya: Awakening">
+            <h1 style="font-family: Nosifer;">Guia de Saint Seiya: Awakening</h1>
+        </div>
+        <!--Barra de Navegação-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" style="margin-bottom: 30px;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)">
+                <img src="img/ssa.png" style="width: 40px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="javascript:void(0)">Página Inicial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="meusPersonagens.html">Meus personagens</a>
+                  </li>
+                  <!-- Dropdown com mais informações-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Mais</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="cosmo.html">Drop de Cosmos</a></li>
+                      <li><a class="dropdown-item" href="listaUsuarios.html">Lista de usuários</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn btn-primary" type="button">Pesquisar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          
+              <!-- Container que abrigará o Conteúdo da página-->
+              <div class="container text-center" style="margin-top: 30px; margin-bottom:100px;">
+
+                <div class="alert alert-info" style="width: 50%; margin:auto;">
+                  Há <strong>24</strong> personagens cadastrados! Confira suas informações.
+                </div>
+                <!--Inicio da Segunda linha da Grid-->
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-3">
+                        <!-- Card do personagem-->
+                        <div class="card" style="width:100%; height: 100%;">
+                            <img class="card-img-top" src="img/athena.png" alt="DeusaAthena">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Deusa Athena</b></h4>
+                              <p class="card-text"><b>Suporte</b></p>
+                              <!-- Ir para Visualizar personagem-->
+                              <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <!-- Card do personagem-->
+                        <div class="card" style="width:100%; height: 100%;">
+                            <img class="card-img-top" src="img/Afrodite.png" alt="Afrodite de Peixes">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Afrodite de Peixes</b></h4>
+                              <p class="card-text"><b>Dano</b></p>
+                              <!-- Card do personagem-->
+                              <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <!-- Card do personagem-->
+                        <div class="card" style="width:100%; height: 100%;">
+                            <img class="card-img-top" src="img/Artemis.png" alt="DeusaArtemis">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Deusa Ártemis</b></h4>
+                              <p class="card-text"><b>Suporte</b></p>
+                              <!-- Card do personagem-->
+                              <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <!-- Card do personagem-->
+                        <div class="card" style="width:100%; height: 100%;">
+                            <img class="card-img-top" src="img/Caim.png" alt="Caim">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Caim de Gêmeos</b></h4>
+                              <p class="card-text"><b>Controle/Suporte</b></p>
+                              <!-- Card do personagem-->
+                              <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                     <!--Iniciona da primeira linha da Grid-->
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-3">
+                        <!-- Card do personagem-->
+                        <div class="card" style="width:100%; height: 100%;">
+                            <img class="card-img-top" src="img/CamusDC.png" alt="CamusDC">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Camus de Aquário de Armadura Divina</b></h4>
+                              <p class="card-text"><b>Controle</b></p>
+                              <!-- Card do personagem-->
+                              <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <!-- Card do personagem-->
+                        <div class="card" style="width:100%; height: 100%;">
+                            <img class="card-img-top" src="img/daidalos.png" alt="Daidalos">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Daidalos de Cefeu</b></h4>
+                              <p class="card-text"><b>Suporte</b></p>
+                              <!-- ir para visualziar personagem-->
+                              <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <!-- Card do personagem-->
+                        <div class="card" style="width:100%; height: 100%;">
+                            <img class="card-img-top" src="img/exclamacao.png" alt="exclamacao">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Exclamação de Athena</b></h4>
+                              <p class="card-text"><b>Dano/Controle/Suporte</b></p>
+                              <!-- ir para visualizar personagem-->
+                              <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <!-- Card do personagem-->
+                        <div class="card" style="width:100%; height: 100%;">
+                            <img class="card-img-top" src="img/Hypnos.png" alt="Hypnos">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Hypnos</b></h4>
+                              <p class="card-text"><b>Suporte/Controle</b></p>
+                              <!-- ir para visualizar personagem-->
+                              <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="row" style="margin-top: 30px;">
+                        <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/June.png" alt="June">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>June de Camaleão</b></h4>
+                                  <p class="card-text"><b>Suporte</b></p>
+                                  <!--ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/Kardia.png" alt="Kardia">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Kardia de Escorpião</b></h4>
+                                  <p class="card-text"><b>Dano</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/Krishina.png" alt="Krishna">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Krishna de Chrysaor</b></h4>
+                                  <p class="card-text"><b>Controle</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/Luna.png" alt="Luna">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Luna de Sextante</b></h4>
+                                  <p class="card-text"><b>Suporte</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row" style="margin-top: 30px;">
+                        <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/Marin.png" alt="Marin">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Marin de Águia</b></h4>
+                                  <p class="card-text"><b>Suporte</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/Myu.png" alt="Myu">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Myu de Papillon</b></h4>
+                                  <p class="card-text"><b>Dano</b></p>
+                                  <!--ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/Orfeu.png" alt="orfeu">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Orfeu de Lira</b></h4>
+                                  <p class="card-text"><b>Dano</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/Pandora.png" alt="pandora">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Pandora</b></h4>
+                                  <p class="card-text"><b>Suporte</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row" style="margin-top: 30px;">
+                          <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/Poseidon.png" alt="poseidon">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Dano/Suporte/Controle</b></h4>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/Saori.png" alt="saori">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Saori Kido</b></h4>
+                                  <p class="card-text"><b>Suporte</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/SeiyaDC.png" alt="seiyaDC">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Seiya de Pegasus da Armadura Divina</b></h4>
+                                  <p class="card-text"><b>Dano</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/Shion.png" alt="shion">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Shion de Áries de Sapuris</b></h4>
+                                  <p class="card-text"><b>Suporte</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row" style="margin-top: 30px;">
+                          <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/ShiryuDC.png" alt="shiryuDc">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Shiryu de Dragão de Armadura Divina</b></h4>
+                                  <p class="card-text"><b>Suporte/Dano</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/shura.png" alt="shura">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Shura de Capricórnio</b></h4>
+                                  <p class="card-text"><b>Dano</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/shuraS.png" alt="shuraS">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Shura de Capricórnio de Sapuris</b></h4>
+                                  <p class="card-text"><b>Dano</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <!-- Card do personagem-->
+                            <div class="card" style="width:100%; height: 100%;">
+                                <img class="card-img-top" src="img/Kanon.png" alt="kanon">
+                                <div class="card-body">
+                                  <h4 class="card-title"><b>Kanon de Gêmeos</b></h4>
+                                  <p class="card-text"><b>Dano</b></p>
+                                  <!-- ir para visualizar personagem-->
+                                  <a href="visualizarPersonagem.html" class="btn btn-primary">Ver Detalhes</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+              </div>
+
+                <!-- Div do Rodapé (Fixa na base) -->
+            <div class="mt-5 bg-dark text-white text-center fixed-bottom">
+              <p>
+                Site de Blog de Cavaleiros do Zodiaco Awakening para o Trabalho de Tecnologias Web<br>
+                Desenvolvido por
+                <b><a href="mailto:lorenzo.boninp@gmail.com?subject=Tecnologias Web">lorenzo.boninp@gmail.com</a></b> Cursando de Ánalise e Desenvolvimento de Sistema
+              </p>
+            </div>
+
+    </body>
+</html>
