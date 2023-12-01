@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisar Animais</title>
+    <link href="css/navBar.css" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
+    <link href ="css/tabelas.css rel"=stylessheet">
+    <style>
+     
+        .divPrincipal {
+            padding: 20px;
+            margin-top: 50px; /* Ajuste conforme necessário */
+        }
+
+        .divTabela {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="cadastrodeusuario.html">Cadastro de Usuário</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ListarAnimais.html">Listar Animais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PesquisarAnimais.html">Pesquisar Animais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="flogin.html">Login</a>
+                </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="divPrincipal">
+        <!-- Conteúdo da página -->
+        <h3>Resultados da Pesquisa:</h3>
+    
+        <div class="divForm">
+            <form action="resultadopesquisaanimais.html" method="POST">
+
+                <label for="filtroEspecie">Selecione a espécie:</label><br>
+                <select name="filtroEspecie">
+                    <option value="Cao">Cão</option>
+                    <option value="Gato">Gato</option>
+                </select><br><br>
+
+                <label for="filtroSexo">Selecione o sexo:</label><br>
+                <select name="filtroSexo">
+                    <option value="Feminino">Feminino</option>
+                    <option value="Macho">Macho</option>
+                </select><br><br>
+
+                <label for="filtroPorte">Selecione o porte:</label><br>
+                <select name="filtroPorte">
+                    <option value="Grande">Grande</option>
+                    <option value="Médio">Médio</option>
+                    <option value="Pequeno">Pequeno</option>
+                </select><br><br>
+
+                
+
+                <input type="submit" name="btPesquisar" value="Pesquisar">
+            </form>
+        </div>
+
+        <hr>
+
+        <h3>Sua pesquisa encontrou 10 animais:</h3>
+        <div class="divTabela">
+        </thead>
+        <tbody>
+        
+
+            <tr class="table-danger">
+                <td><img src="mina1.jpeg" width="250"></td>
+                <td>Mina</td>
+                <td>Cão</td>
+                <td>Feminino</td>
+                <td>SRD</td>
+                <td>Médio</td>
+                <td>Sim</td>
+            </tr>      
+            <tr class="table-primary">
+                <td><img src="Billy.jpeg" width="250"></td>
+                <td>Billy</td>
+                <td>Gato</td>
+                <td>Macho</td>
+                <td>SRD</td>
+                <td>Pequeno</td>
+                <td>Sim</td>
+            </tr>
+            <tr class="table-danger">
+                <td><img src="ravena 1.jpeg" width="250"></td>
+                <td>Ravena</td>
+                <td>Gato</td>
+                <td>Feminino</td>
+                <td>SRD</td>
+                <td>Pequeno</td>
+                <td>Sim</td>
+            </tr>
+            <tr class="table-primary">
+                <td><img src="Salem.jpeg" width="250"></td>
+                <td>Salem</td>
+                <td>Gato</td>
+                <td>Macho</td>
+                <td>SRD</td>
+                <td>Pequeno</td>
+                <td>Sim</td>
+            </tr>
+            <tr class="table-danger">
+                <td><img src="Polaca.jpeg" width="250"></td>
+                <td>Polaca</td>
+                <td>Cão</td>
+                <td>Feminino</td>
+                <td>SRD</td>
+                <td>Grande</td>
+                <td>Sim</td>
+            </tr>
+            <tr class="table-danger">
+                <td><img src="Cherry.jpeg" width="250"></td>
+                <td>Cherry</td>
+                <td>Gato</td>
+                <td>Feminino</td>
+                <td>SRD</td>
+                <td>Pequeno</td>
+                <td>Sim</td>
+            </tr>
+            <tr class="table-danger">
+                <td><img src="Frida.jpeg" width="250"></td>
+                <td>Frida</td>
+                <td>Gato</td>
+                <td>Feminino</td>
+                <td>SRD</td>
+                <td>Pequeno</td>
+                <td>Sim</td>
+            </tr>
+            <tr class="table-danger">
+                <td><img src="iza1.jpeg" width="250"></td>
+                <td>Izabela</td>
+                <td>Cão</td>
+                <td>Feminino</td>
+                <td>SRD</td>
+                <td>Grande</td>
+                <td>Sim</td>
+            
+            </tr>
+        </tr>
+        <tr class="table-danger">
+            <td><img src="Kira.jpeg" width="250"></td>
+            <td>Kira</td>
+            <td>Gato</td>
+            <td>Feminino</td>
+            <td>SRD</td>
+            <td>Pequeno</td>
+            <td>Sim</td>
+        
+        </tr>
+        </tbody>
+    </table>
+        </div>
+    </div>
+</body>
+</html>
