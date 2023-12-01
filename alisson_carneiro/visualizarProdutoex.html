@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Produto</title>
+
+
+    <!--CDNs para importação do Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--Importação da fonte-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Signika+Negative&display=swap');
+      </style>
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <img src="img/logo_joaninha.png" style="width: 200px;" title="Joaninhann TB">
+        <h1 style="font-family: Nosifer;">Joaninhas TB</h1>
+    </div>
+
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Página Inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formLogin.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Container que abrigará o conteúdo da página-->
+      <div class="container-fluid text-center" style="margin-top: 30px;">
+
+        <!-- Carrossel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" style="width: 40%; margin: auto; margin-bottom: 100px;">
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+        
+            <!-- Slide/Carrossel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider001.jpeg" alt="Foto 001" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider002.jpg" alt="Foto 002" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider003.jpg" alt="Foto 003" class="d-block w-100">
+            </div>
+            </div>
+        
+            <!-- Ícones de Esquerda / Direita -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <br>
+        <a href="realizarCompra.html" class="btn btn-primary">Comprar</a>
+            
+      </div>
+</body>
+</html>

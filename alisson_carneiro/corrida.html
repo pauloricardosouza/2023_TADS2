@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida</title>
+
+    <!--CDNs para importação do Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Adicionar ícone à guia do navegador-->
+    <link rel="icon" type="image/png" href="img/icone.png"/>    
+    
+</head>
+<body>
+<!--Nav bar-->
+<nav class="navbar navbar-expand-sm bg-black navbar-dark fixed-top">
+    <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item" style="margin-left: 20px;">
+                <a href="index.html"><img src="img/logo1.png" width="100px"> </a>
+            
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item" style="margin-left: 50px;">
+                <a class="nav-link" href="blackFriday.html">Black Friday</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="masculino.html">Masculino</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="feminino.html">Feminino</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="infantil.html">Infantil</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="formLogin.html" style="margin-right: 20px;";>Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="carrinho.html" style="margin-right: 20px;">
+                    <img src="img/carrinho.png" style="width: 30px;">
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+
+
+<!--Container que abrigará o conteúdo da página-->
+<div class="container-fluid text-center" style="margin-top: 30px;">
+    <div class="alert alert-info" style="width: 50%; margin: auto;">
+        adicione o cupom <strong>RUN23</strong> para conseguir 5% de cashback!
+    </div>
+    <!--Início da primeira linha da GRID-->
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/Tenis-Nike-Air-Force-1-07-Le-Masculino-Branco.webp" alt="Nike Air Force 1">
+                <div class="card-body">
+                <h4 class="card-title">NIKE AIR FORCE 1 MASCULINO</h4>
+                <p class="card-text">R$ 799,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/adidas_falcon.webp" alt="Adidas Falcon Feminino">
+                <div class="card-body">
+                <h4 class="card-title">ADIDAS FALCON FEMININO</h4>
+                <p class="card-text">R$ 699,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/vans.webp" alt="Vans">
+                <div class="card-body">
+                <h4 class="card-title">VANS ULTRARANGE EXO</h4>
+                <p class="card-text">R$ 649,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/gazelle.webp" alt="ADIDAS GAZELLE MASCULINO">
+                <div class="card-body">
+                <h4 class="card-title">ADIDAS GAZELLE MASCULINO</h4>
+                <p class="card-text">R$ 599,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/dunke.webp" alt="NIKE DUNK LOW EWT FEMININO">
+                <div class="card-body">
+                <h4 class="card-title">NIKE DUNK LOW EWT FEMININO</h4>
+                <p class="card-text">R$ 849,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/air_force_1_feminino.webp" alt="Nike Air Force 1">
+                <div class="card-body">
+                <h4 class="card-title">NIKE AIR FORCE 1 FEMININO</h4>
+                <p class="card-text">R$ 1099,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/Tenis-Nike-Air-Force-1-07-Le-Masculino-Branco.webp" alt="Nike Air Force 1">
+                <div class="card-body">
+                <h4 class="card-title">NIKE AIR FORCE 1 MASCULINO</h4>
+                <p class="card-text">R$ 799,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/adidas_falcon.webp" alt="Adidas Falcon Feminino">
+                <div class="card-body">
+                <h4 class="card-title">ADIDAS FALCON FEMININO</h4>
+                <p class="card-text">R$ 699,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/vans.webp" alt="Vans">
+                <div class="card-body">
+                <h4 class="card-title">VANS ULTRARANGE EXO</h4>
+                <p class="card-text">R$ 649,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/gazelle.webp" alt="ADIDAS GAZELLE MASCULINO">
+                <div class="card-body">
+                <h4 class="card-title">ADIDAS GAZELLE MASCULINO</h4>
+                <p class="card-text">R$ 599,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/dunke.webp" alt="NIKE DUNK LOW EWT FEMININO">
+                <div class="card-body">
+                <h4 class="card-title">NIKE DUNK LOW EWT FEMININO</h4>
+                <p class="card-text">R$ 849,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <!--Card para exibição do Produto-->
+            <div class="card" style="width:100%; height: 100%;">
+                <img class="card-img-top" src="img/air_force_1_feminino.webp" alt="Nike Air Force 1">
+                <div class="card-body">
+                <h4 class="card-title">NIKE AIR FORCE 1 FEMININO</h4>
+                <p class="card-text">R$ 1099,99</p>
+                <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<footer class="bg-black py-5 mt-5">
+    <div class="container text-light text center">
+        <p class="display-5 mb-3">COLOR </p>
+        <small class="text-white-50">&copy; COLOR SNEAKERS LTDA CNPJ 00.000.000/0000-00 Inscrição Estadual 000.000.000.000 Endereço: Rua Setealém 104, Sala 106, Cond Sans Serif, Bairro Sinistro, Embu das Artes - SP CEP: 00000-000 Atendimento ao Cliente: sac.brasil@br.color.com | (11) 4002-8922 | Segundas às Sextas, das 8h às 18h</small>
+    </div>
+</footer>
+
+    
+
+</body>
+</html>
