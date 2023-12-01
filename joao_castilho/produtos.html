@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Disponíveis</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+        /* Alteracoes no Estilo */
+
+        .logo-container {
+            background-color: #343a40; 
+            padding: 10px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid text-center logo-container">
+        <img src="img/logo_ag.png" style="width: 200px;" title="AG componentes">
+        <h1 style="font-family: Raleway;">AG componentes</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Pagina Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formCadastro.html">Criar Conta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center" style="margin-top: 30px;">
+        <div class="alert alert-info" style="width: 50%; margin: auto;">
+            Possuímos <strong>4</strong> opções disponíveis em nosso estoque!
+        </div>
+
+        <!--Cards dos produtos-->
+
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center" style="margin-top: 30px;">
+            <div class="col">
+                <div class="card h-100 mx-auto" style="width: 18rem;">
+                    <img class="card-img-top" src="img/produto1.1.png" alt="Joaninha Vermelha">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Câmara de ar 15/16</b></h4>
+                        <p class="card-text"><b>R$92,05</b></p>
+                        <a href="visualizarProd1.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 mx-auto" style="width: 18rem;">
+                    <img class="card-img-top" src="img/produto2.png" alt="Joaninha Amarela">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Pneu CT DRAG 26/10.0-15</b></h4>
+                        <p class="card-text"><b>R$4.275,54</b></p>
+                        <a href="visualizarProd2.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 mx-auto" style="width: 18rem;">
+                    <img class="card-img-top" src="img/produto3.1.png" alt="Joaninha Azul">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Pneu CT DRAG 215/50-15</b></h4>
+                        <p class="card-text"><b>R$3.127,21</b></p>
+                        <a href="visualizarProd3.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 mx-auto" style="width: 18rem;">
+                    <img class="card-img-top" src="img/produto4.png" alt="Joaninha Verde">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Pneu CT BIKE 70/90-17</b></h4>
+                        <p class="card-text"><b>R$490,00</b></p>
+                        <a href="visualizarProd4.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

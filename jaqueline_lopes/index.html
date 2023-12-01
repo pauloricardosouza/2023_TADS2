@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+    </style>
+
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+    <!-- Cabeçalho da Página -->
+    <div class="container-fluid text-center">
+        <img src="img/logotipo.jpg" style="width:200px;" title="Joaninhas TB">
+        <h1 style="font-family: Nosifer;">Lof Store</h1>
+    </div>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: #DB7093;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" title="Ir para a Página Inicial">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Link Inativo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
+
+        <div class="alert alert-info text-center" style="width:50%; margin:auto;">
+            Há <strong>18</strong> espécies diferentes disponíveis em nosso estoque! &nbsp<i class="bi bi-emoji-smile"></i>
+        </div>
+        
+        <!-- Início da primeira linha da GRID -->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/Calça rosa.JPG" title='Calça pink' alt="calça pink">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>calça pink</b></h4>
+                        <p class="card-text"><b>R$ 89,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/Croped branco e preto.JPG" title='Cropeed Preto' alt=" Cropeed preto">
+                    <div class="card-body"style="height:100%">
+                        <h4 class="card-title"><b>Croopeed  </b></h4>
+                        <p class="card-text"><b>R$ 49,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/Blusa manga longa.JPG" title='Joaninha Azul' alt="Joaninha Azul">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Cropeed Manga longa</b></h4>
+                        <p class="card-text"><b>R$ 69,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/Conjunto de calça branca e Blusa preta.JPG" title='Joaninha Verde' alt="Joaninha Verde">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Conjuto</b></h4>
+                        <p class="card-text"><b>R$ 99,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da primeira linha da GRID -->
+
+        <!-- Início da segunda linha da GRID-->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/Camiseta preta.JPG" title='Joaninha Vermelha' alt="Joaninha Vermelha">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>cropeed preto</b></h4>
+                        <p class="card-text"><b>R$ 49,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/Blusinha branca.JPG" title='Joaninha Branca' alt="Joaninha Branca">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Blusinha Branca</b></h4>
+                        <p class="card-text"><b>R$ 35,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/Croped preto.JPG" title='Joaninha Roxa' alt="Joaninha Roxa">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>cropeed preto</b></h4>
+                        <p class="card-text"><b>R$ 39,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/Vestido.JPG" title='Joaninha Dourada' alt="Joaninha Dourada">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>vestido</b></h4>
+                        <p class="card-text"><b>R$ 99,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da segunda linha da GRID -->
+
+    </div>
+
+    <!-- Div do Rodapé (Fixa na base) -->
+    <div class="mt-5 text-white text-center fixed-bottom" style="background-color:#DB7093">
+        <p>
+            Interfaces para um sistema de vendas de roupas<br>
+            Desenvolvido por
+            <b><a href="mailto:paulo.silva@ifpr.edu.br?subject=Tecnologias Web">Jaqueline.lopes@ifpr.edu.br</a></b> para utilização na disciplina de Tecnologias Web
+        </p>
+    </div>
+
+</body>
+</html>
