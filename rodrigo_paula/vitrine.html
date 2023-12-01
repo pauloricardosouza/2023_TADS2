@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loja</title>
+        <!-- Importar Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Importar o estilo css-->
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <!--Div Principal Para todo o conteudo da pagina-->
+        <div class="container-fluid text-center principal">
+            <!--Logo da pagina-->
+            <img src="img/logo.png" style="width: 200px;" title="logo">
+            <div><h2>Sistema de Gerenciamento</h2></div>
+            <!--Inicio da barra de navegação-->
+            <!--Sticky top para a barra de navegação ficar sempre em cima quando rolar o site-->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+                <div class="container-fluid">
+                    <!--botão responsivo da barra de navegação só aparece em telas pequenas-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <!--Lista com os itens do menu/navbar-->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="vendas.html">Vendas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="clientes.html">Clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="estoque.html">Estoque</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active bg-color bg-light text-dark" href="vitrine.html">Vitrine</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--Fim da Barra de navegação-->
+            
+            <!--Titulo da pagina-->
+            <div style="padding: 15px; margin: auto; ">
+                <h2>Nossos Produtos</h2>
+                <h5>Aqui estão imagens dos produtos cadastrados na loja</h5>
+            </div>
+            <!--Inicio dos slides/carrossel-->
+            <div class="container-fluid text-center" style="margin-top: 30px; margin-bottom: 100px ;"  >      
+                <div id="demo" class="carousel slide" data-bs-ride="carousel" style="width: 40%; margin: auto;">
+
+                    <!-- Botoes indicadores da posição no slide-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                    </div>
+                
+                    <!--Imagens do carrossel-->
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="img/camisa11.jpg" alt="Camiseta" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/camisa12.jpeg" alt="Camiseta" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/camisa21.jpeg" alt="Camiseta" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/camisa22.jpeg" alt="Camiseta" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/camisa3.jpeg" alt="Camiseta" class="d-block w-100">
+                        </div>
+                    </div>
+                
+                    <!-- Botoes de controle direita e esquerda -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <!--Fim dos slides-->
+        </div>
+
+       
+
+    </body>
+    </html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Sorveteria Nevasca</title>
+
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+
+        body {
+            background-color: #ffcccb; /* Rosa claro */
+        }
+
+        .navbar {
+            background-color: #ff5e62 !important; /* Rosa escuro */
+        }
+
+        h1 {
+            color: #863D3D; /* Rosa escuro */
+            font-family: 'Cardo', serif;
+        }
+
+        .btn-primary {
+            background-color: #ff5e62; /* Rosa escuro */
+            border-color: #ff5e62; /* Rosa escuro */
+        }
+
+        .btn-primary:hover {
+            background-color: #ff3d41; /* Rosa mais escuro - hover */
+            border-color: #ff3d41; /* Rosa mais escuro - hover */
+        }
+
+        .card {
+            background-color: #f8d7da; /* Vermelho suave para os cards */
+        }
+    </style>
+
+    <!-- CDN da última versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho da Página -->
+    <div class="container text-center">
+        <img src="img/sorveteria.png" style="width:200px;" title="Joaninhas TB">
+        <h1 style="font-family: Nosifer;"> Sorveteria Nevasca</h1>
+    </div>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" title="Ir para a Página Inicial">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Link Inativo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
+
+        <div class="alert alert-info text-center" style="width:50%; margin:auto;">
+            Há <strong>20</strong> variedades de sorvetes disponíveis! &nbsp<i class="bi bi-emoji-smile"></i>
+        </div>
+
+        <!-- Início da primeira linha da GRID -->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/sorvete1" title='Sundae de Chocolate' alt="Joaninha Vermelha">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Sundae de Chocolate</b></h4>
+                        <p class="card-text"><b>R$ 12,00</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/sundae2" title='Sundae de Morango' alt="Sundae de Morango">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Sundae de Morango</b></h4>
+                        <p class="card-text"><b>R$ 12,00</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/sundae3.jpg" title='Sundae de Caramelo' alt="Sundae de Caramelo">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Sundae de Caramelo</b></h4>
+                        <p class="card-text"><b>R$ 12,00</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/shake1.jpg" title='Milkshake de Cholcolate' alt="Milkshake de Chocolate">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Milkshake de Chocolate</b></h4>
+                        <p class="card-text"><b>R$ 15,00</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da primeira linha da GRID -->
+
+        <!-- Início da segunda linha da GRID-->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/shake2.jpg" title='Milkshake de Morango' alt="Milkshake de Morango">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Milkshake de Frutas Vermelhas</b></h4>
+                        <p class="card-text"><b>R$ 15,00</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/casquinha1.jpg" title='Casquinha Mista' alt="Casquinha Mista">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Casquinha Mista</b></h4>
+                        <p class="card-text"><b>R$ 5,00</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/casquinha2.jpg" title='Casquinha de Creme' alt="Casuinha de Creme">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Casquinha de Creme</b></h4>
+                        <p class="card-text"><b>R$ 5,00</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/casquinha3.jpg" title='Casquinha de Morango' alt="Casquinha de Morango">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Casquinha de Morango</b></h4>
+                        <p class="card-text"><b>R$ 5,00</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da segunda linha da GRID -->
+
+    </div>
+
+    
+
+</body>
+
+</html>

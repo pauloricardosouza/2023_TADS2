@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Produto - Sorveteria Nevasca</title>
+
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+
+        body {
+            background-color: #ffcccb; /* Rosa claro */
+        }
+
+        .navbar {
+            background-color: #ff5e62 !important; /* Rosa mais escuro */
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #863D3D; /* Rosa mais escuro */
+            font-family: 'Nosifer', cursive;
+        }
+
+        .btn-primary {
+            background-color: #ff5e62; /* Rosa mais escuro */
+            border-color: #ff5e62; /* Rosa mais escuro */
+        }
+
+        .btn-primary:hover {
+            background-color: #ff5e62; /* Rosa mais intenso - hover */
+            border-color: #ff5e62; /* Rosa mais intenso - hover */
+        }
+
+        .carousel-indicators button {
+            background-color: #ff5e62; /* Rosa mais escuro */
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            color: #ff5e62; /* Rosa mais escuro */
+        }
+    </style>
+
+    <!-- CDN da última versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho da Página -->
+    <div class="container text-center">
+        <img src="img/sorveteria.png" style="width:200px;" title="Sorveteria Nevasca">
+        <h1 style="font-family: Nosifer;">Sorveteria Nevasca</h1>
+    </div>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" title="Ir para a Página Inicial">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Link Inativo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" style="width:30%; margin:auto;">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/taca1.jpg" alt="Taça Suprema - Foto 01" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/taca2.jpg" alt="Joaninha Vermelha - Foto 02" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/taca3.jpg" alt="Joaninha Vermelha - Foto 03" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <h2>Taça Suprema</h2>
+        <h3>R$ 35,00</h3>
+        <br>
+        <a href="#realizarCompra.html" class="btn btn-primary">Comprar</a>
+
+    </div>
+
+    
+
+</body>
+
+</html>

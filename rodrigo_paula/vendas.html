@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loja</title>
+        <!-- Importar Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Importar estilo css-->
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <!--Div principal -->
+        <div class="container-fluid text-center principal">
+            <img src="img/logo.png" style="width: 200px;" title="logo">
+            <div><h2>Sistema de Gerenciamento</h2></div>
+            <!--Inicio da barra de navegação-->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <!--botão responsivo da barra de navegação só aparece em telas pequenas-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--container para abrigar os itens e links da barra de navegação-->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <!--Lista com os itens da navbar-->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active bg-color bg-light text-dark" href="vendas.html">Vendas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="clientes.html">Clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="estoque.html">Estoque</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="vitrine.html">Vitrine</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--Fim da barra de navegação-->
+            
+
+            
+
+        </div>
+        <!--Container para abrigar a tabela-->
+        <div class="container mt-3"> 
+            <!--Tabela De vendas Inicio-->
+            <h2 class="text-center" style="margin-top: 25px; ">Área de Vendas</h2>
+            
+            <div class="container-fluid text-left" style="margin-top: 50px;" >
+                <button type="button" class="btn btn-success" style=" margin-right: 10px;" 
+                data-bs-toggle="modal" data-bs-target="#modalVenda  " >Nova Venda</button>
+                <button type="button" class="btn btn-danger disabled"style=" margin-right: 15px;">Excluir</button>
+            </div>
+    
+                    
+            <table class="table table-striped table-hover" style="margin-top: 10px;">
+            <thead>
+                <tr>
+                <th>Cód. Da Venda</th>
+                <th>Total</th>
+                <th>Data</th>
+                <th>Nome do Cliente</th>
+                <th>Cpf do Cliente</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>001</td>
+                <td>R$139.90</td>
+                <td>12/11/2022</td>
+                <td>Joao Silva</td>
+                <td>101.110.010-00</td>
+                </tr>
+                <tr>
+                <td>002</td>
+                <td>R$241.30</td>
+                <td>09/11/2022</td>
+                <td>Fernando Silva</td>
+                <td>101.110.010-00</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>R$125.90</td>
+                    <td>15/11/2022</td>
+                    <td>Bruno Silva</td>
+                    <td>101.110.010-00</td>
+                </tr>
+                
+            </tbody>
+            </table>
+        </div>
+
+
+        <!--Modal para fazer nova venda-->
+        <div class="modal" id="modalVenda">
+            <div class="modal-dialog modal-fullscreen ">
+                <div class="modal-content">            
+                    <!-- Cabeçalho modal -->
+                    <div class="modal-header ">
+                        <h4 class="modal-title">Nova Venda</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>           
+                    <!-- Conteudo do modal -->
+                    <div class="modal-body" >
+                        <div class="row">
+                            <div class="container col-5 containerCarrinho">
+                                <form action="#">
+                                    <label class="form-label" for="cpfCliente">CPF:</label>
+                                    <input  style="width: 200px;" type="text" name="cpfCliente" placeholder="Digite o cpf">
+                                    <button class="btn btn-info">Pesquisar Cliente</button><br>
+                                    <label class="form-label" for="nomeCliente">Nome:</label>
+                                    <input class="form-control" type="text" name="nomeCliente" placeholder="Digite o nome">
+                                    <br>
+                                    <label class="form-label"  for="enderecoCliente">Endereço:</label>
+                                    <input class="form-control" type="text" name="enderecoCliente" placeholder="Digite o endereço"><br>                        
+                                </form>
+                            </div>
+                            <div class="container col-6 containerCarrinho" >
+                                <form action="#">
+                                    <label class="form-label" for="codigoProduto">Código:</label>
+                                    <input style="width: 200px;" type="text" name="codigoProduto" placeholder="Digite o codigo">
+                                    <button class="btn btn-info">Pesquisar Produto</button><br>
+                                    <label class="form-label" for="dadoProduto">Produto:</label>
+                                    <input class="form-control" type="text" name="dadoProduto" >
+                                    <label class="form-label" for="dadoMarca">Marca:</label>   
+                                    <select class="form-select" name="dadoMarca" id="dadoMarca">
+                                        <option value="marca1">Chronic</option>
+                                        <option value="marca2">Adidas</option>
+                                        <option value="marca3">Nike</option>
+                                    </select>      
+                                    <div style="display: inline-block; margin-top: 5px;">
+                                        <label class="form-label" for="dadoCor">Cor:</label>
+                                        <select style="text-align: center; width: 135px;" name="cores" id="cores">
+                                            <option value="branco">Branco</option>
+                                            <option value="preto">Preto</option>
+                                            <option value="azul">Azul</option>
+                                        </select>
+                                        <label class="form-label" for="dadoCor">Tamanho:</label>
+                                        <select  name="tamanho" id="tamanho">
+                                            <option value="p">P</option>
+                                            <option value="M">M</option>
+                                            <option value="G">G</option>
+                                        </select>
+                                        <label for="qtd">Quantidade:</label>
+                                        <input type="number" name="qtd" id="qtd" style="width: 50px;">
+                                    </div><br>
+                                    <label for="precoVenda">Preço R$</label><br>
+                                    <input type="number" step="0.01" min="0.01"  name="precoVenda" id="precoVenda" 
+                                    style="width: 170px;">
+                                                            
+                                </form>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row containerCarrinho">
+                            <h2 style="text-align: center;">Carrinho de Compras</h2>
+                            <div class="container">
+                                <table class="table table-striped table-hover" style="margin-top: 10px;">
+                                    <thead>
+                                        <tr>
+                                        <th>Cód</th>
+                                        <th>Produto</th>
+                                        <th>Marca</th>
+                                        <th>Cor</th>                                     
+                                        <th>Tamanho</th>
+                                        <th>Preço</th>
+                                        <th>Qtd</th>
+                                        <th>Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>001</td>
+                                            <td>Calça jeans zuli</td>
+                                            <td>Nike</td>
+                                            <td>Azul</td>
+                                            <td>G</td>
+                                            <td>129,90</td>
+                                            <td>1</td>
+                                            <td>129,90</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001</td>
+                                            <td>Calça jeans zuli</td>
+                                            <td>Nike</td>
+                                            <td>Azul</td>
+                                            <td>G</td>
+                                            <td>129,90</td>
+                                            <td>1</td>
+                                            <td>129,90</td>
+                                        </tr>  
+                                        <tr>
+                                            <td>001</td>
+                                            <td>Calça jeans zuli</td>
+                                            <td>Nike</td>
+                                            <td>Azul</td>
+                                            <td>G</td>
+                                            <td>129,90</td>
+                                            <td>1</td>
+                                            <td>129,90</td>
+                                        </tr>                                                                                 
+                                    </tbody>
+                                    </table>
+                            </div>
+                            
+                        </div>
+                    </div>           
+                    <!-- Rodape com botoes para salvar limpar e sair -->
+                    <div class="modal-footer ">
+                        <div class="rodapeTotal"><h3>Total da Venda R$ 389,70</h3></div>
+                        <button type="button" class="btn btn-success botaoModal" data-bs-dismiss="modal">Pagamento</button>  
+                        <button type="button" class="btn btn-danger botaoModal" data-bs-dismiss="modal">Cancelar Venda</button>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    
+    </body>
+    </html>

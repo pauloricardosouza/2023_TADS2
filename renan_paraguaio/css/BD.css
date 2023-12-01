@@ -1,0 +1,120 @@
+body {
+    background-color: #323232; /* Cinza mais escuro */
+    color: #ffffff; /* Texto mais claro */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de Navegação */
+nav {
+    background-color: #1a1a1a; /* Fundo mais escuro */
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: #66b032; /* Verde da série */
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #ffffff; /* Texto branco */
+}
+
+/* Slider */
+#slider {
+    margin-top: 20px;
+    /* Adicione estilos específicos do slider conforme necessário */
+}
+
+/* Cards */
+#cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1a1a1a; /* Fundo mais escuro */
+    color: #ffffff; /* Texto branco */
+}
+
+/* Formulário de Registro */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Tabela de Episódios */
+#episodeTable {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1a1a1a; /* Fundo mais escuro */
+    color: #ffffff; /* Texto branco */
+}
+
+/* Mensagens de Alerta */
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #66b032; /* Verde da série */
+    border-radius: 4px;
+    color: #66b032; /* Verde da série */
+    background-color: #1a1a1a; /* Fundo mais escuro */
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a1a1a; /* Fundo mais escuro */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Adicione estilos personalizados para o carrossel */
+
+/* Estilizando o fundo do carrossel */
+#carouselExample {
+    background-color: #242424;
+}
+
+/* Estilizando as imagens do carrossel */
+.carousel-inner img {
+    width: 70%; /* Reduzindo o tamanho das imagens para 70% da largura do contêiner */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); /* Adicionando uma sombra sutil */
+}
+
+/* Estilizando os controles de navegação */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #53B3CB;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Mudando a cor do indicador ativo */
+.carousel-indicators .active {
+    background-color: #53B3CB;
+}
+
+/* Estilizando o texto da legenda do carrossel */
+.carousel-caption {
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
